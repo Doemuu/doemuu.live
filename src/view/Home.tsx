@@ -1,7 +1,7 @@
 import React from "react";
 import { compose, bindActionCreators } from "redux";
 import { connect } from 'react-redux';
-import { increment, decrement } from '../store/actions';
+import { increment, decrement } from '../store/reducer/counter/actions';
 
 interface HomeState {
   counter: any;
