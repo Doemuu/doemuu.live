@@ -2,6 +2,7 @@ import React from "react";
 import { compose, bindActionCreators } from "redux";
 import { connect } from 'react-redux';
 import { increment, decrement } from '../store/reducer/counter/actions';
+import { Link } from "react-router-dom";
 
 interface HomeState {
   counter: any;
@@ -10,7 +11,6 @@ interface HomeState {
 }
 
 function Home({ counter, dispatchIncrement, dispatchDecrement }: HomeState) {
-  console.log("Hello World");
   return (
     <div className="Home">
       <header className="Home-header">
@@ -26,6 +26,7 @@ function Home({ counter, dispatchIncrement, dispatchDecrement }: HomeState) {
           onClick={dispatchDecrement}
         />
         <p>{counter}</p>
+        <Link to="/about">About</Link>
       </header>
     </div>
   );
