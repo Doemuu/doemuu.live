@@ -18,6 +18,7 @@ function Home({ counter, dispatchIncrement, dispatchDecrement }: HomeState) {
         <input
           type="button"
           value="INCREMENT"
+          className="bg-gray-200 hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:shadow-outline focus:border-gray-300"
           onClick={dispatchIncrement}
         />
         <input
