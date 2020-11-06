@@ -13,17 +13,19 @@ function LandingPage() {
   return (
     <div className="landingpage">
       <div className="navigation-burger absolute">
-        <span>Hello World</span>
+        <span className="line-1 line absolute"></span>
+        <span className="line-2 line absolute"></span>
+        <span className="line-3 line absolute"></span>
       </div>
       <div className="motto-container absolute ">
         <div className="motto-1 motto">
-          <img src={Loyalty} alt="Loyalty"></img>
+          <span>Loyalty</span>
         </div>
         <div className="motto-2 motto">
-          <img src={Courage} alt="Courage"></img>
+          <span>Courage</span>
         </div>
         <div className="motto-3 motto">
-          <img src={Endurance} alt="Endurance"></img>
+          <span>Endurance</span>
         </div>
         <div className="continuation-container">
           <span>Dominik Berger</span>
