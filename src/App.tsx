@@ -1,23 +1,33 @@
 import React from 'react';
-import { Switch, Route } from 'react-router';
-
-
-import Home from "./view/Home";
-import About from "./view/About";
-import LandingPage from "./view/Landingpage";
+import logo from './logo.svg';
+import './App.css';
+import {Route, Switch} from "react-router";
+import Home from ".components/pages/contact/contact";
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/homepage" component={LandingPage} />
-        </Switch>
-      </div>
-      <header className="App-header"></header>
-    </div>
+      <Switch>
+        <Route path="/" exact>
+        <Home/>
+          <div className="App">
+            <header className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
+              <p>
+                Edit <code>src/App.tsx</code> and save to reload.
+              </p>
+              <a
+                className="App-link"
+                href="https://reactjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn React
+              </a>
+            </header>
+          </div>
+        </Route>
+      </Switch>
+
   );
 }
 
