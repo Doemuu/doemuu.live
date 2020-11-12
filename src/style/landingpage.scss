@@ -35,7 +35,7 @@
     flex: 1;
 
     .spacer {
-      flex: calc(5 * #{$i});
+      height: calc((#{$i} - 1) * 15vh + 20vh);
     }
   }
 }
@@ -61,6 +61,12 @@
   &:hover,
   &:focus {
     background-color: #2c3e50;
-    cursor:pointer;
+    cursor: pointer;
+    .triangle {
+      display: inline-block;
+    }
+  }
+  .triangle {
+    display: none;
   }
 }

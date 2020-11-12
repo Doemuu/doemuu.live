@@ -10,23 +10,25 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Burger />
     <div id="landingpage">
-      <div class="motto-container">
-        <div class="mottos">
-          <div class="motto-1">
-            <div class="spacer"></div>
-            <div class="motto">Loyalty</div>
+      <div className="motto-container">
+        <div className="mottos">
+          <div className="motto-1">
+            <div className="spacer"></div>
+            <div className="motto">Loyalty</div>
           </div>
-          <div class="motto-2">
-            <div class="spacer"></div>
-            <div class="motto">Courage</div>
+          <div className="motto-2">
+            <div className="spacer"></div>
+            <div className="motto">Courage</div>
           </div>
-          <div class="motto-3">
-            <div class="spacer"></div>
-            <div class="motto">Endurance</div>
+          <div className="motto-3">
+            <div className="spacer"></div>
+            <div className="motto">Endurance</div>
           </div>
         </div>
-        <div class="toolbar">
-          <Link class="btn">Learn More</Link>
+        <div className="toolbar">
+          <Link className="btn">
+            Learn More <span className="triangle">▸</span>
+          </Link>
         </div>
       </div>
     </div>
