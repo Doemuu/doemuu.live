@@ -1,0 +1,36 @@
+.navbtn{
+  position:absolute;
+  top:5%;
+  right:5%;
+  .btn-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(3*2px + 2rem);
+    width: 2.5rem;
+    &:hover{
+        cursor:pointer;
+        .line-2{
+          width:2.5rem;
+        }
+      }
+    .line{
+      position:absolute;
+      width:2.5rem;
+      height:2px;
+      background-color:black;
+      right:0;
+
+    }
+    .line-1{
+      margin-bottom:1rem;
+    }
+    .line-2{
+      width:2rem;
+      transition: width 0.5s;
+    }
+    .line-3{
+      margin-top:1rem;
+    }
+  }
+}
