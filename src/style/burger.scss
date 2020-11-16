@@ -24,13 +24,27 @@
     }
     .line-1{
       margin-bottom:1rem;
+      transition: all ease-in 0.2s;
+      &.active{
+        transform: rotate(-45deg);
+        margin:0;
+      }
     }
     .line-2{
       width:2rem;
       transition: width 0.5s;
+      transition: all ease-in 0.15s;
+      &.active{
+        background-color:transparent;
+      }
     }
     .line-3{
       margin-top:1rem;
+      transition: all ease-in 0.2s;
+      &.active{
+        transform: rotate(45deg);
+        margin:0;
+      }
     }
   }
 }

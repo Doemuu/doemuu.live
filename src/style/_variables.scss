@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+$font-family-sans-serif: "Do Hyeon", sans-serif;
+
+$bleu: rgb(63, 110, 212);
+$dark-bleu: rgb(158, 158, 158);
+$colour-primary: $bleu;
+$colour-secondary: $dark-bleu;
+
+$theme-colors: (
+  "primary": $colour-primary,
+  "secondary": $colour-secondary,
+);

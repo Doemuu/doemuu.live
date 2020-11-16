@@ -1,0 +1,31 @@
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  transition: opacity ease-in-out 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    font-size:3rem;
+    a:hover{
+      cursor:pointer;
+    }
+    .current{
+      text-decoration:underline;
+      color:black !important;
+    }
+  }
+  &.active{
+    visibility: visible;
+    opacity: 1;
+  }
+}
