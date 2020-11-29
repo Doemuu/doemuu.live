@@ -1,0 +1,18 @@
+h3,
+h4 {
+  font-weight: normal !important;
+}
+.activedate {
+  color: var(--secondary);
+}
+.technology {
+  p {
+    margin: 0px !important;
+  }
+  .technology-title {
+    border-bottom: solid 1px #fff;
+  }
+}
+.vertical-timeline-element-date{
+  opacity: .9 !important;
+}

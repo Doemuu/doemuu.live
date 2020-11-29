@@ -16,16 +16,22 @@
     display: flex;
     flex-direction: column;
     font-size:3rem;
+    a{
+      color:var(--secondary) !important;
+    }
     a:hover{
       cursor:pointer;
+      color: var(--primary) !important;
+      text-decoration:none;
     }
     .current{
       text-decoration:underline;
-      color:black !important;
+      color:var(--primary) !important;
     }
   }
   &.active{
     visibility: visible;
     opacity: 1;
+    z-index:1;
   }
 }

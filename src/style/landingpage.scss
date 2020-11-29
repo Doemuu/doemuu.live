@@ -2,7 +2,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: rgb(26, 58, 100);
   padding: 0;
   margin: 0;
 }
@@ -44,20 +44,15 @@
 .btn {
   font-family: "Do Hyeon", sans-serif;
   font-size: 1rem;
-  border: 3px solid #fff;
+  border-bottom: 2px solid rgb(26, 58, 100);
   background: none;
-  margin: 15px 30px;
-  padding: 10px 15px;
-  background-color: #3d5d7c;
-  color: white;
+  color: rgb(26, 58, 100);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   transition: all ease-in 0.15s;
-  border-radius: 10px;
 
   &:hover,
   &:focus {
-    background-color: #2c3e50;
     cursor: pointer;
     .triangle {
       display: inline-block;

@@ -18,7 +18,7 @@
       position:absolute;
       width:2.5rem;
       height:2px;
-      background-color:black;
+      background-color:var(--secondary);
       right:0;
 
     }
@@ -26,8 +26,9 @@
       margin-bottom:1rem;
       transition: all ease-in 0.2s;
       &.active{
-        transform: rotate(-45deg);
+        transform: rotate(-135deg);
         margin:0;
+        z-index:1;
       }
     }
     .line-2{
@@ -42,8 +43,9 @@
       margin-top:1rem;
       transition: all ease-in 0.2s;
       &.active{
-        transform: rotate(45deg);
+        transform: rotate(135deg);
         margin:0;
+        z-index:1;
       }
     }
   }
