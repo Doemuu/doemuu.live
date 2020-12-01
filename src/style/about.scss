@@ -1,0 +1,16 @@
+@import "variables";
+.aboutme {
+  margin: 10px;
+  .aboutme-content {
+    .image-container {
+      text-align: center;
+      .image {
+        margin: 0 auto;
+        height: 470px;
+        width: 330px;
+        border-radius: 10px;
+        border-right: 5px solid $primary;
+      }
+    }
+  }
+}
