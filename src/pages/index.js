@@ -27,7 +27,7 @@ const IndexPage = () => (
             </div>
           </div>
           <div className="toolbar">
-            <Link className="btn">
+            <Link className="btn" to="/">
               Learn More <span className="triangle">▸</span>
             </Link>
           </div>

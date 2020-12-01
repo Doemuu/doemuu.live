@@ -1,3 +1,5 @@
+@import "variables";
+
 #landingpage {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,7 +21,6 @@
   justify-content: space-evenly;
   flex: 8;
   font-size: 3rem;
-
   .motto {
     flex: 10;
   }
@@ -34,6 +35,22 @@
     .spacer {
       height: calc((#{$i} - 1) * 15vh + 20vh);
     }
+  }
+}
+
+@media (max-width: $breakpoint-responsive) {
+  .motto-container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -20%);
+  }
+  .mottos {
+    display: block;
+    flex:none;
+  }
+  .spacer{
+    display:none;
   }
 }
 
