@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
       <div>
         <Navigation isNavOpen={isNavOpen} />
         <Burger isNavOpen={isNavOpen} handleClick={handleNav} />
-        <main>{children}</main>
+        <main className="main">{children}</main>
       </div>
     </div>
   )

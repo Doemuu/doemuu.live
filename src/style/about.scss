@@ -1,16 +1,47 @@
 @import "variables";
 .aboutme {
-  margin: 10px;
+  margin-bottom: 100px;
   .aboutme-content {
-    .image-container {
-      text-align: center;
-      .image {
-        margin: 0 auto;
-        height: 470px;
-        width: 330px;
-        border-radius: 10px;
-        border-right: 5px solid $primary;
+    .personal-header {
+      .image-container {
+        text-align: center;
+        .image {
+          margin: 0 auto;
+          height: 470px;
+          width: 330px;
+          border-radius: 10px;
+          border-right: 5px solid $primary;
+        }
       }
     }
+    .chitchat{
+      .nonresponsive-header{
+        h2{
+          margin: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-responsive) {
+  .aboutme-content {
+    display: block !important;
+  }
+  .personal-header{
+    h2{
+      margin:0px !important;
+    }
+  }
+  .image-container{
+    padding: 0 !important;
+    padding-right:20px !important;
+  }
+  .responsive-header{
+    display:block !important;
+  }
+  .image {
+    height: 157px !important;
+    width: 110px !important;
   }
 }
