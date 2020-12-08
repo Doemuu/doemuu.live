@@ -8,7 +8,7 @@ import "../style/cv.scss";
 const CV = () => (
   <Layout>
     <div className="cv">
-     <div className="aboutme">
+     <div className="aboutme" id="aboutme">
       <h2 className="title">About Me</h2>
       <About/>
      </div>
