@@ -6,7 +6,7 @@ import Skillbar from "../components/skillbar"
 
 import "../style/cv.scss"
 const skills = [
-  { id: 1, skillName: "Javascript", level: 75 },
+  { id: 1, skillName: "Javascript", level: 75, example: {privateProject: 10, lastcontributedproject: "Name", totalCommits: 60} },
   { id: 2, skillName: "C#", level: 35 },
 ]
 const CV = () => (
@@ -18,6 +18,7 @@ const CV = () => (
       </div>
       <div className="skills element" id="skills">
         <h2 className="title">Technical Skills</h2>
+        <p className="titlechild">in %</p>
         <div className="technicalskills">
           {skills.map((skill, index) => (
             <Skillbar key={index} skill={skill} />

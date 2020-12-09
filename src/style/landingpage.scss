@@ -79,3 +79,8 @@
     display: none;
   }
 }
+.hoverable{
+  &:hover{
+    cursor:pointer;
+  }
+}

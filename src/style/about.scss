@@ -1,48 +1,56 @@
 @import "variables";
-.aboutme {
-  .aboutme-content {
-    .personal-header {
-      .image-container {
-        text-align: center;
-        .image {
-          margin: 0 auto;
-          height: 470px;
-          width: 330px;
-          border-radius: 10px;
-          border-right: 5px solid $primary;
-        }
-      }
-    }
-    .chitchat{
-      .nonresponsive-header{
-        h2{
-          margin: 0px !important;
-        }
-      }
-    }
-  }
+.intro {
+  display: grid;
+  grid-template-areas:
+    "img t-1 t-1"
+    "img t-2 t-2"
+    "img t-3 t-3"
+    "img t-4 t-4";
+}
+
+.image {
+  margin: 0 auto;
+  height: 470px;
+  width: 330px;
+  border-radius: 10px;
+  border-right: 5px solid $primary;
+}
+
+.img {
+  grid-area: img;
+}
+
+.t-1 {
+  grid-area: t-1;
+}
+
+.t-2 {
+  grid-area: t-2;
+}
+
+.t-3 {
+  grid-area: t-3;
+}
+
+.t-4 {
+  grid-area: t-4;
 }
 
 @media (max-width: $breakpoint-responsive) {
-  .aboutme-content {
-    display: block !important;
+  .intro {
+    display: grid;
+    grid-template-areas:
+      "img t-1"
+      "t-2 t-2"
+      "t-3 t-3"
+      "t-4 t-4";
   }
-  .personal-header{
-    h2{
-      margin:0px !important;
-    }
-  }
-  .image-container{
-    padding: 0 !important;
-    padding-right:20px !important;
-  }
-  .responsive-header{
-    display:block !important;
-  }
-  .nonresponsive-header{
-    display: none !important;
-  }
+}
+@media (max-width: $breakpoint-responsive) {
   .image {
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
     height: 157px !important;
     width: 110px !important;
   }
