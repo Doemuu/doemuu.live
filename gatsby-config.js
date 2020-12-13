@@ -1,10 +1,23 @@
+const dotenv = require("dotenv")
+dotenv.config()
+
+const { graphQLQuery, variables } = require("./github-api")
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Doemuu Live`,
     description: `Loyalty. Courage. Endurance. Dominik Berger! British / Swiss Software Engineer based in Lucerne, Switzerland`,
-    author: `@gatsbyjs`,
+    author: `Dominik Berger`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        graphQLQuery,
+        variables,
+        token: process.env.GITHUB_TOKEN,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {

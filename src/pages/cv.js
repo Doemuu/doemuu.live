@@ -6,7 +6,7 @@ import Skillbar from "../components/skillbar"
 
 import "../style/cv.scss"
 const skills = [
-  { id: 1, skillName: "Javascript", level: 75, example: {privateProject: 10, lastcontributedproject: "Name", totalCommits: 60} },
+  { id: 1, skillName: "JavaScript", level: 75, example: true},
   { id: 2, skillName: "C#", level: 35 },
 ]
 const CV = () => (

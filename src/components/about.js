@@ -29,7 +29,7 @@ const About = () => {
         <h3 className="d-inline">Dominik Berger</h3>
         <br />
         <p className="d-inline">
-          I am one to take mottos pretty seriously, which is why I spent a lot
+          I am one to take mottos pretty serious, which is why I spent a lot
           of time thinking of three distinctive words illustrating my character.
         </p>
       </div>
