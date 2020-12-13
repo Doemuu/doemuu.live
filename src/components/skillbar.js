@@ -77,12 +77,19 @@ const Skillbar = ({ skill }) => {
     }
     return lastUpdatedRepo;
   }
+  const getAnimationHeightOfViewport = () => {
+    console.log("Window",window.innerWidth);
+    if(window.innerWidth >= 768){
+      return 50;
+    }
+    return 150;
+  }
   const expandVariants = {
     isExpanded: { rotate: 180 },
     isNotExpanded: { rotate: 0 },
   }
   const expandContentVariants = {
-    isExpanded: { height: 50 },
+    isExpanded: { height: getAnimationHeightOfViewport()},
     isNotExpanded: { height: 0, transitionEnd: { display: "none" } },
   }
   return (
