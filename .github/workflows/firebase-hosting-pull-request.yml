@@ -16,3 +16,5 @@ jobs:
           projectId: doemuulive-56e78
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
+          GITHUB_TOKEN: ${{secrets.GH_API_TOKEN}}
+
