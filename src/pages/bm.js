@@ -100,6 +100,13 @@ const BM = () => {
     }
     calculateNotation(markArray);
   }
+  if(window === undefined){
+    return (
+      <div>
+        <p>Loading...</p>
+      </div>
+    );
+  }
   return (
     <Layout>
       <div>
