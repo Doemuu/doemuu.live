@@ -28,7 +28,7 @@ const useStateWithLocalStorage = (localStorageKey, defaultValue) => {
   return [value, setValue];
 };
 
-const Subject = ({children}) => {
+const Subject = (children) => {
   const [notation, setNotation] = useStateWithLocalStorage(
     'notation', 0
   );
@@ -114,6 +114,7 @@ const Subject = ({children}) => {
     }
     calculateNotation(markArray);
   }
+  children.emitNotation(notation, children.subject.name);
   return (
       <div className="subject-container-box">
         <div className="subject-container d-flex flex-column ">
@@ -128,7 +129,7 @@ const Subject = ({children}) => {
                   >
                     <BiCaretRight onClick={handleExpansion}/>
                   </motion.div>
-                  <span>{children.name}</span>
+                  <span>{children.subject.name}</span>
                 </div>
                 <span className="notation">{notation}</span>
               </div>
