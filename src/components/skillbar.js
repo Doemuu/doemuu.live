@@ -7,7 +7,8 @@ import dayjs from "dayjs";
 import "../style/skillbar.scss"
 
 const Skillbar = ({ skill }) => {
-  const [isExpanded, setExpanded] = React.useState(false)
+  const [isExpanded, setExpanded] = React.useState(false);
+  const [animationWidth, setAnimationWidth] = React.useState(50);
   const handleClick = () => {
     setExpanded(!isExpanded)
   }
@@ -77,19 +78,19 @@ const Skillbar = ({ skill }) => {
     }
     return lastUpdatedRepo;
   }
-  const getAnimationHeightOfViewport = () => {
-    console.log("Window",window.innerWidth);
+  React.useEffect(() => {
     if(window.innerWidth >= 768){
-      return 50;
+      setAnimationWidth(50);
+    }else{
+      setAnimationWidth(150);
     }
-    return 150;
-  }
+  }, [])
   const expandVariants = {
     isExpanded: { rotate: 180 },
     isNotExpanded: { rotate: 0 },
   }
   const expandContentVariants = {
-    isExpanded: { height: getAnimationHeightOfViewport()},
+    isExpanded: { height: animationWidth},
     isNotExpanded: { height: 0, transitionEnd: { display: "none" } },
   }
   return (
