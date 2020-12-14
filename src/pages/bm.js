@@ -6,12 +6,24 @@ import { BiCaretRight } from "react-icons/bi"
 import "../style/bm.scss"
 
 const useStateWithLocalStorage = (localStorageKey, defaultValue) => {
+  const startValue = () => {
+    if(window !== undefined){
+      if(localStorage.getItem(localStorageKey)){
+        console.log(localStorage.getItem(localStorageKey));
+        return localStorage.getItem(localStorageKey);
+      }
+      return defaultValue;
+    }
+    return defaultValue;
+  }
   const [value, setValue] = React.useState(
-    localStorage.getItem(localStorageKey) || defaultValue
+    startValue
   );
 
   React.useEffect(() => {
-    localStorage.setItem(localStorageKey, value);
+    if(window !== undefined){
+      localStorage.setItem(localStorageKey, value);
+    }
   }, [value]);
 
   return [value, setValue];
@@ -36,16 +48,13 @@ const BM = () => {
   const handleRemoval = (index) => {
     var marksList = JSON.parse(marks);
     marksList.splice(index, 1);
-    console.log(marksList);
     calculateNotation(marksList);
     setMarks(JSON.stringify(marksList));
-    console.log(marks);
   }
   const calculateNotation = markArray => {
     var retVal = 0;
     var sum = 0;
     var sumWorth = 0;
-
     for(var i = 0; i < markArray.length; i++){
       sum += parseFloat(markArray[i].notation)*parseFloat(markArray[i].worth);
       sumWorth += parseFloat(markArray[i].worth);
@@ -100,13 +109,7 @@ const BM = () => {
     }
     calculateNotation(markArray);
   }
-  if(window === undefined){
-    return (
-      <div>
-        <p>Loading...</p>
-      </div>
-    );
-  }
+  console.log("marks", marks);
   return (
     <Layout>
       <div>
@@ -124,7 +127,7 @@ const BM = () => {
               {marks.length > 0 && (
                 <div className="mark-container d-flex">
                   {JSON.parse(marks).map((mark, index) => (
-                    <div onClick={() => handleRemoval(index)} className="px-3">
+                    <div key={index} onClick={() => handleRemoval(index)} className="px-3">
                       <span>{mark.notation}</span>
                     </div>
                   ))}
