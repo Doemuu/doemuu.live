@@ -1,17 +1,20 @@
-import React from "react"
-import { BiCaretDown } from "react-icons/bi"
-import { motion } from "framer-motion"
-import { useStaticQuery } from "gatsby"
 import dayjs from "dayjs";
+import { motion } from "framer-motion";
+import { useStaticQuery } from "gatsby";
+import React from "react";
+import { BiCaretDown } from "react-icons/bi";
+import "../style/skillbar.scss";
 
-import "../style/skillbar.scss"
+const expandVariants = {
+  isExpanded: { rotate: 180 },
+  isNotExpanded: { rotate: 0 },
+};
 
 const Skillbar = ({ skill }) => {
   const [isExpanded, setExpanded] = React.useState(false);
-  const [animationWidth, setAnimationWidth] = React.useState(50);
   const handleClick = () => {
-    setExpanded(!isExpanded)
-  }
+    setExpanded(!isExpanded);
+  };
   const data = useStaticQuery(
     graphql`
       query MyQuery {
@@ -43,56 +46,72 @@ const Skillbar = ({ skill }) => {
         }
       }
     `
-  )
+  );
 
- const repositories =
-    data.allGithubData.edges[0].node.data.user.repositories.edges;
-  const languages = [];
+  const repositories = React.useMemo(
+    () => data.allGithubData.edges[0].node.data.user.repositories.edges,
+    [repositories]
+  );
 
-  for (const repository of repositories) {
-    const repoLanguages = repository.node.languages.edges.map(
-      lang => lang.node.name,
-    );
-    const uniqueLanguages = repoLanguages.filter(
-      lang => languages.indexOf(lang) === -1,
-    );
-    languages.push(...uniqueLanguages);
-  }
+  const languages = React.useMemo(() => {
+    const langs = [];
 
-  const getRepoByLanguage = lang => {
-    return repositories.filter(repository => {
+    for (const repository of repositories) {
       const repoLanguages = repository.node.languages.edges.map(
-        lang => lang.node.name,
+        (lang) => lang.node.name
       );
-      return repoLanguages.indexOf(lang) !== -1;
-    });
-  };
-  const getLastUpdatedRepo = lang => {
-    var repoList = getRepoByLanguage(lang);
-    var lastUpdatedRepo = repoList[0];
-    for(const repo of repoList){
-      const date = dayjs(repo.node.pushedAt);
-      if(!date.isBefore(dayjs(lastUpdatedRepo.node.pushedAt))){
-        lastUpdatedRepo = repo;
-      }
+      const uniqueLanguages = repoLanguages.filter(
+        (lang) => languages.indexOf(lang) === -1
+      );
+      langs.push(...uniqueLanguages);
     }
-    return lastUpdatedRepo;
-  }
-  React.useEffect(() => {
-    if(window.innerWidth >= 768){
-      setAnimationWidth(50);
-    }else{
-      setAnimationWidth(150);
-    }
-  }, [])
-  const expandVariants = {
-    isExpanded: { rotate: 180 },
-    isNotExpanded: { rotate: 0 },
-  }
-  const expandContentVariants = {
-    isExpanded: { height: animationWidth},
-    isNotExpanded: { height: 0, transitionEnd: { display: "none" } },
-  }
+
+    return langs;
+  }, [repositories]);
+
+  const getRepoByLanguage = React.useCallback(
+    (lang) => {
+      return repositories.filter((repository) => {
+        const repoLanguages = repository.node.languages.edges.map(
+          (lang) => lang.node.name
+        );
+        return repoLanguages.indexOf(lang) !== -1;
+      });
+    },
+    [repositories]
+  );
+
+  const getLastUpdatedRepo = React.useCallback(
+    (lang) => {
+      const repoList = getRepoByLanguage(lang);
+      const lastUpdatedRepo = repoList.reduce(
+        (accumulator, current) =>
+          dayjs(current.node.pushedAt).isBefore(
+            dayjs(accumulator.node.pushedAt)
+          )
+            ? accumulator
+            : current,
+        repoList,
+        repoList[0]
+      );
+      return lastUpdatedRepo;
+    },
+    [getRepoByLanguage]
+  );
+
+  const animationHeightOfViewport = React.useMemo(
+    () => (window.innerWidth >= 768 ? 50 : 150),
+    []
+  );
+
+  const expandContentVariants = React.useMemo(
+    () => ({
+      isExpanded: { height: animationHeightOfViewport },
+      isNotExpanded: { height: 0, transitionEnd: { display: "none" } },
+    }),
+    [animationHeightOfViewport]
+  );
+
   return (
     <div className="skillbar container-md">
       <span>{skill.skillName}</span>
@@ -141,12 +160,16 @@ const Skillbar = ({ skill }) => {
           </div>
           <div className="d-flex flex-column">
             <span>Last Updated</span>
-            <span>{dayjs(getLastUpdatedRepo(skill.skillName).node.pushedAt).format("DD MMMM YYYY")}</span>
+            <span>
+              {dayjs(getLastUpdatedRepo(skill.skillName).node.pushedAt).format(
+                "DD MMMM YYYY"
+              )}
+            </span>
           </div>
         </motion.div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Skillbar
+export default Skillbar;
