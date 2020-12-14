@@ -1,0 +1,26 @@
+.subject-container-box{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding:5px;
+  width:90%;
+  margin-bottom:10px;
+  margin-top:10px;
+  .subject-container{
+    margin-bottom: 20px;
+  }
+}
+.markInput{
+  width:100px;
+  span{
+    line-height:1;
+  }
+}
+.formBtn{
+  height:30px;
+  min-width: 50px;
+}
+.clearBtn{
+  margin-top:5px;
+}
+.addForm{
+  margin-top:10px;
+}
