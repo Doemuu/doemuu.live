@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      env:
+          GITHUB_API_TOKEN: ${{ secrets.GH_API_TOKEN }}
       - run: npm install && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -16,5 +18,4 @@ jobs:
           projectId: doemuulive-56e78
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
-          GITHUB_TOKEN: '${{ secrets.GH_API_TOKEN }}'
 
