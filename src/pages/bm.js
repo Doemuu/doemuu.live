@@ -7,7 +7,7 @@ import "../style/bm.scss"
 
 const useStateWithLocalStorage = (localStorageKey, defaultValue) => {
   const startValue = () => {
-    if(window !== undefined){
+    if(window !== null){
       if(localStorage.getItem(localStorageKey)){
         console.log(localStorage.getItem(localStorageKey));
         return localStorage.getItem(localStorageKey);
@@ -59,10 +59,10 @@ const BM = () => {
       sum += parseFloat(markArray[i].notation)*parseFloat(markArray[i].worth);
       sumWorth += parseFloat(markArray[i].worth);
     }
-    retVal = sum / sumWorth;
-    if(retVal === "NaN"){
+    if(!markArray.length > 0){
       setNotation(1);
     }else{
+      retVal = sum / sumWorth;
       setNotation(Math.round(retVal * 100) / 100);
     }
   }
@@ -109,7 +109,6 @@ const BM = () => {
     }
     calculateNotation(markArray);
   }
-  console.log("marks", marks);
   return (
     <Layout>
       <div>
