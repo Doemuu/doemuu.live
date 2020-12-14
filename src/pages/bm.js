@@ -6,22 +6,20 @@ import { BiCaretRight } from "react-icons/bi"
 import "../style/bm.scss"
 
 const useStateWithLocalStorage = (localStorageKey, defaultValue) => {
-  const startValue = () => {
-    if(window !== null){
-      if(localStorage.getItem(localStorageKey)){
-        console.log(localStorage.getItem(localStorageKey));
-        return localStorage.getItem(localStorageKey);
-      }
-      return defaultValue;
-    }
-    return defaultValue;
-  }
   const [value, setValue] = React.useState(
-    startValue
+    defaultValue
   );
 
   React.useEffect(() => {
+    if(localStorage.getItem(localStorageKey)){
+      setValue(localStorage.getItem(localStorageKey));
+    }
+  }, [])
+
+
+  React.useEffect(() => {
     if(window !== undefined){
+      console.log(value);
       localStorage.setItem(localStorageKey, value);
     }
   }, [value]);
