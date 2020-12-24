@@ -30,7 +30,7 @@ const useStateWithLocalStorage = (localStorageKey, defaultValue) => {
 
 const Subject = (children) => {
   const [notation, setNotation] = useStateWithLocalStorage(
-    'notation', 0
+    `${children.subject.name}notation`, 0
   );
   const [worth, setWorth] = useStateWithLocalStorage(
     'worth', 100
@@ -39,7 +39,7 @@ const Subject = (children) => {
     'myValueInLocalStorage', 4
   );
   const [marks, setMarks] = useStateWithLocalStorage(
-    'myMarks', []
+    `myMarks${children.subject.name}`, []
   );
   const [expanded, setExpanded] = React.useState(false);
   const expandVariants = {

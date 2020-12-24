@@ -8,8 +8,16 @@ import "../style/bm.scss"
 
 const BM = () => {
   const subjects = [
-    {id: 1, name: "Biology"},
-    {id: 2, name: "Chemistry"}
+    {id: 1, name: "Biologie"},
+    {id: 2, name: "Chemie"},
+    {id:3, name: "Mathe"},
+    {id:4, name: "Physik"},
+    {id:5, name: "Deutsch"},
+    {id:6, name: "Französisch"},
+    {id:7, name: "Englisch"},
+    {id:8, name: "Geschichte & Politik"},
+    {id:9, name: "Wirtschaft & Recht"},
+    {id:10, name: "IDAF"},
   ]
   const [semesterSubjects, setSemesterSubjects] = React.useState([]);
   const [semesterNotation, setSemesterNotation] = React.useState(0);
@@ -48,16 +56,17 @@ const BM = () => {
   }
   return (
     <Layout>
-      <div>
+      <div className="bm-container">
+        <h3>BM Notenrechner</h3>
         {subjects.map((sub, index) => (
-          <Subject key={index} subject={sub} emitNotation={handleNotation}/>
+          <Subject key={index} subject={sub} emitNotation={handleNotation} />
         ))}
         <div>
-          <p>SemesterNotation: {semesterNotation}</p>
+          <p>Semester ∅: {semesterNotation}</p>
         </div>
       </div>
     </Layout>
-  );
+  )
 };
 
 
