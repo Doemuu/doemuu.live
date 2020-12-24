@@ -114,7 +114,7 @@ const Subject = (children) => {
     }
     calculateNotation(markArray);
   }
-  children.emitNotation(notation, children.subject.name);
+  children.emitNotation(notation, children.subject);
   return (
       <div className="subject-container-box">
         <div className="subject-container d-flex flex-column ">
@@ -150,11 +150,11 @@ const Subject = (children) => {
         {expanded && (
           <div className="addForm d-flex flex-end align-items-end">
             <div className="markInput px-2 d-flex flex-column">
-              <span>Mark:</span>
+              <span>Note:</span>
               <input id="number-spinner" type="number" className="inputElement" value={value} onChange={onChange}/>
             </div>
             <div className="markInput px-2 d-flex flex-column">
-              <span>Worth:</span>
+              <span>Wert (in %):</span>
               <input id="number-worth" type="number" value={worth} onChange={onChange}/>
             </div>
             <div className="px-2">

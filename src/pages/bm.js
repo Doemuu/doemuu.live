@@ -8,51 +8,59 @@ import "../style/bm.scss"
 
 const BM = () => {
   const subjects = [
-    {id: 1, name: "Biologie"},
-    {id: 2, name: "Chemie"},
-    {id:3, name: "Mathe"},
-    {id:4, name: "Physik"},
-    {id:5, name: "Deutsch"},
-    {id:6, name: "Französisch"},
-    {id:7, name: "Englisch"},
-    {id:8, name: "Geschichte & Politik"},
-    {id:9, name: "Wirtschaft & Recht"},
-    {id:10, name: "IDAF"},
+    {id: 1, name: "Biologie", worth: "66,6"},
+    {id: 2, name: "Chemie", worth: "33,3"},
+    {id:3, name: "Mathe", worth: "100"},
+    {id:4, name: "Physik", worth: "100"},
+    {id:5, name: "Deutsch", worth: "100"},
+    {id:6, name: "Französisch", worth: "100"},
+    {id:7, name: "Englisch", worth: "100"},
+    {id:8, name: "Geschichte & Politik", worth:"100"},
+    {id:9, name: "Wirtschaft & Recht", worth: "100"},
+    {id:10, name: "IDAF", worth: "100"},
   ]
   const [semesterSubjects, setSemesterSubjects] = React.useState([]);
   const [semesterNotation, setSemesterNotation] = React.useState(0);
   const handleNotation = (x, subject) => {
     if(semesterSubjects.length === 0){
       var subjectArray = semesterSubjects;
-      subjectArray.push({subjectName: subject, subjectNotation: x});
+      subjectArray.push({subjectName: subject.name, subjectNotation: x, subjectWorth: subject.worth});
       setSemesterSubjects(subjectArray);
       calculateNotation();
-    }
-    var preexisting = false;
-    for(var i = 0; i < semesterSubjects.length; i++){
-      if(semesterSubjects[i].subjectName === subject){
-        preexisting = true;
-        var subjectArray = semesterSubjects;
-        subjectArray[i] = {subjectName: subject, subjectNotation: x};
-        setSemesterSubjects(subjectArray);
-        console.log(semesterSubjects);
-        calculateNotation();
-        break;
+    }else{
+      var preexisting = false;
+      for(var i = 0; i < semesterSubjects.length; i++){
+        if(semesterSubjects[i].subjectName === subject.name){
+          preexisting = true;
+          console.log("Subject", subject);
+          var subjectArray = semesterSubjects;
+          subjectArray[i] = {subjectName: subject.name, subjectNotation: x, subjectWorth: subject.worth};
+          setSemesterSubjects(subjectArray);
+          calculateNotation();
+          break;
+        }
       }
-    }
-    if(!preexisting){
-      var subjectArray = semesterSubjects;
-      subjectArray.push({subjectName: subject, subjectNotation: x});
-      setSemesterSubjects(subjectArray);
-      calculateNotation();
+      if(!preexisting){
+        var subjectArray = semesterSubjects;
+        subjectArray.push({subjectName: subject.name, subjectNotation: x, subjectWorth: subject.worth});
+        setSemesterSubjects(subjectArray);
+        calculateNotation();
+      }
     }
   }
   const calculateNotation = () => {
-    var retVal = 0;
+    var retVal = 0
+    var sum = 0
+    var sumWorth = 0
+    console.log(semesterSubjects);
     for(var i = 0; i < semesterSubjects.length; i++){
-      retVal += semesterSubjects[i].subjectNotation;
+      sum += semesterSubjects[i].subjectNotation * parseFloat(semesterSubjects[i].subjectWorth);
+      sumWorth += parseFloat(semesterSubjects[i].subjectWorth);
     }
-    setSemesterNotation(retVal / semesterSubjects.length);
+    console.log("sum", sum);
+    console.log("sumWorth", sumWorth);
+    retVal = sum/sumWorth;
+    setSemesterNotation(retVal);
   }
   return (
     <Layout>
