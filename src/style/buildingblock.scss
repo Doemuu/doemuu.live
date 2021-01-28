@@ -1,0 +1,17 @@
+.buildingblock{
+  text-align: center;
+  .details{
+    margin-top:50px;
+    .detail{
+      width:250px;
+      .icon{
+        border-radius: 50%;
+        border: solid 2px var(--primary);
+        height:60px;
+        width:60px;
+        padding:10px;
+        color: var(--primary);
+      }
+    }
+  }
+}
