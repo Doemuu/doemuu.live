@@ -1,0 +1,22 @@
+.languageSkill{
+  text-align: center;
+  .details{
+    height:200px;
+    .detail{
+      width:250px;
+      .country{
+        border-radius: 50%;
+        border: solid 2px var(--primary);
+        height:50px;
+        width:50px;
+        padding:10px;
+        color: var(--primary);
+      }
+      .topText{
+        display:inline-block;
+        width:150px;
+        border-bottom: solid 2px var(--primary);
+      }
+    }
+  }
+}
