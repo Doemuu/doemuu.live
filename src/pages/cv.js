@@ -8,16 +8,13 @@ import BuildingBlock from "../components/buildingblock"
 import LanguageSkill from "../components/languageskills"
 
 import personalDetails from "../assets/personalDetails"
+import technicalSkills from "../assets/technicalSkills"
 
 import Img from "gatsby-image"
 
 import "../style/cv.scss"
 
 const CV = () => {
-  const skills = [
-    { id: 1, skillName: "JavaScript", level: 75, example: true },
-    { id: 2, skillName: "C#", level: 35 },
-  ]
 
   const data = useStaticQuery(graphql`
     query {
@@ -65,7 +62,6 @@ const CV = () => {
       }
     }
   `)
-
   const languageSkills = {
     title: "language skills",
     details: [
@@ -98,28 +94,36 @@ const CV = () => {
       },
       {
         icon: (
-          <Img className="country" fluid={data?.france?.childImageSharp?.fluid} />
+          <Img
+            className="country"
+            fluid={data?.france?.childImageSharp?.fluid}
+          />
         ),
         text: "French",
         textTwo: "B2",
       },
       {
         icon: (
-          <Img className="country" fluid={data?.italy?.childImageSharp?.fluid} />
+          <Img
+            className="country"
+            fluid={data?.italy?.childImageSharp?.fluid}
+          />
         ),
         text: "Italian",
         textTwo: "A2",
       },
       {
         icon: (
-          <Img className="country" fluid={data?.spain?.childImageSharp?.fluid} />
+          <Img
+            className="country"
+            fluid={data?.spain?.childImageSharp?.fluid}
+          />
         ),
         text: "Spanish",
         textTwo: "A1",
       },
     ],
   }
-
   return (
     <Layout>
       <div className="cv">
@@ -137,7 +141,7 @@ const CV = () => {
           <h2 className="title">technical skills</h2>
           <p className="titlechild">in %</p>
           <div className="technicalskills">
-            {skills.map((skill, index) => (
+            {technicalSkills.map((skill, index) => (
               <Skillbar key={index} skill={skill} />
             ))}
           </div>
