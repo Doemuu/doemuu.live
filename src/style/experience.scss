@@ -1,0 +1,17 @@
+.experience{
+  text-align:center;
+  .detail{
+    width: 300px;
+    height: 280px;
+    .card-header{
+      height: 100px;
+      background: var(--primary);
+      color: white;
+      h3{
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

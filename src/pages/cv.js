@@ -6,9 +6,12 @@ import About from "../components/about"
 import Skillbar from "../components/skillbar"
 import BuildingBlock from "../components/buildingblock"
 import LanguageSkill from "../components/languageskills"
+import Experience from "../components/experience";
 
 import personalDetails from "../assets/personalDetails"
 import technicalSkills from "../assets/technicalSkills"
+import experience from "../assets/experience";
+import furthereducation from "../assets/furthereducation";
 
 import Img from "gatsby-image"
 
@@ -136,6 +139,12 @@ const CV = () => {
         </div>
         <div className="languageSkill element">
           <LanguageSkill {...languageSkills} />
+        </div>
+        <div className="experience element">
+          <Experience {...experience} />
+        </div>
+        <div className="experience element">
+          <Experience {...furthereducation}/>
         </div>
         <div className="skills element" id="skills">
           <h2 className="title">technical skills</h2>
