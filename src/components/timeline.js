@@ -15,7 +15,7 @@ const Timeline = () => (
       className="vertical-timeline-element--work"
       contentStyle={{ background: "var(--secondary)", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid  var(--secondary)" }}
-      date="August. 2019 - July. 2020"
+      date="Juli. 2021 - November. 2021"
       dateClassName="activedate"
       iconStyle={{ background: " var(--secondary)", color: "#fff" }}
       icon={<FaLaptopCode />}
