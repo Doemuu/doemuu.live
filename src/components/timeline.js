@@ -13,6 +13,27 @@ const Timeline = () => (
   <VerticalTimeline>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
+      contentStyle={{ background: "var(--secondary)", color: "#fff" }}
+      contentArrowStyle={{ borderRight: "7px solid  var(--secondary)" }}
+      date="August. 2019 - July. 2020"
+      dateClassName="activedate"
+      iconStyle={{ background: " var(--secondary)", color: "#fff" }}
+      icon={<FaLaptopCode />}
+    >
+      <h3 className="vertical-timeline-element-title">
+        Soldat d'aviation
+      </h3>
+      <h4 className="vertical-timeline-element-subtitle">Payerne, VD, CH</h4>
+      <p>
+        Military service in the swiss armed forces, as a soldier in the swiss airforce.
+      </p>
+      <div className="technology">
+        <p className="technology-title">Skills used:</p>
+        <p>military sportsmedal, cadre recommendation</p>
+      </div>
+    </VerticalTimelineElement>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work"
       contentStyle={{ background: "var(--primary)", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid  var(--primary)" }}
       date="August. 2019 - July. 2020"
@@ -62,7 +83,9 @@ const Timeline = () => (
       icon={<IoSchoolSharp />}
     >
       <h3 className="vertical-timeline-element-title">Student</h3>
-      <h4 className="vertical-timeline-element-subtitle">Beinwil am See, AG, CH</h4>
+      <h4 className="vertical-timeline-element-subtitle">
+        Beinwil am See, AG, CH
+      </h4>
       <p>Lower secondary school (Sekundarschule) Beinwil am See</p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
@@ -72,7 +95,9 @@ const Timeline = () => (
       icon={<IoSchoolSharp />}
     >
       <h3 className="vertical-timeline-element-title">Student</h3>
-      <h4 className="vertical-timeline-element-subtitle">Beinwil am See, AG, CH</h4>
+      <h4 className="vertical-timeline-element-subtitle">
+        Beinwil am See, AG, CH
+      </h4>
       <p>
         5th grade in Beinwil am See primary school (5. Klasse der Primarschule)
       </p>
