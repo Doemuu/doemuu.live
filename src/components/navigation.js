@@ -15,7 +15,7 @@ const Navigation = ({ isNavOpen }) => (
       <Link activeClassName="current" to="/filler">
         <span>Featured Projects</span>
       </Link>
-      <a href="https://landing-page-97297.web.app/en" target="_blank">
+      <a href="https://jenyus.web.app/" target="_blank">
         <span>Jenyus Org</span>
       </a>
     </div>
