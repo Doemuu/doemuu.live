@@ -6,6 +6,7 @@ import {
 } from "react-vertical-timeline-component"
 import { IoSchoolSharp } from "react-icons/io5"
 import { FaLaptopCode } from "react-icons/fa"
+import {IoIosJet} from "react-icons/io"
 import "react-vertical-timeline-component/style.min.css"
 import "../style/timeline.scss"
 
@@ -18,7 +19,7 @@ const Timeline = () => (
       date="Juli. 2021 - November. 2021"
       dateClassName="activedate"
       iconStyle={{ background: " var(--secondary)", color: "#fff" }}
-      icon={<FaLaptopCode />}
+      icon={<IoIosJet />}
     >
       <h3 className="vertical-timeline-element-title">
         Soldat d'aviation

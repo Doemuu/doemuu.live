@@ -12,7 +12,7 @@ const Navigation = ({ isNavOpen }) => (
       <Link to="/cv" activeClassName="current">
         <span>CV</span>
       </Link>
-      <Link activeClassName="current" to="/filler">
+      <Link activeClassName="current" to="/blog">
         <span>Featured Projects</span>
       </Link>
       <a href="https://jenyus.web.app/" target="_blank">
