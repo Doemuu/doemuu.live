@@ -8,6 +8,7 @@ module.exports = {
     title: `Doemuu Live`,
     description: `Loyalty. Courage. Endurance. Dominik Berger! British / Swiss Software Engineer based in Lucerne, Switzerland`,
     author: `Dominik Berger`,
+    siteUrl: "https://doemuulive-56e78.web.app/",
   },
   plugins: [
     {
@@ -29,11 +30,11 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      path: `${__dirname}/src/markdown-pages`,
-      name: `markdown-pages`,
-    },
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/markdown-pages`,
+        name: `markdown-pages`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

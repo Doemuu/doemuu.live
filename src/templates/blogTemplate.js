@@ -1,14 +1,36 @@
 import React from "react"
+import { useLocation } from "@reach/router"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../components/layout"
 import { FiLinkedin, FiFacebook, FiTwitter } from "react-icons/fi"
 
 import "../style/blog.scss"
 
 const BlogTemplate = ({ data }) => {
+  const { pathname } = useLocation()
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
+
+  const {
+    site: { siteMetadata },
+  } = data
+
+  const title = React.useMemo(
+    () => `${frontmatter.title} | ${siteMetadata.title}`,
+    [frontmatter, siteMetadata]
+  )
+
+  const encodedTitle = React.useMemo(() => encodeURIComponent(title), [title])
+
+  const url = React.useMemo(() => `${siteMetadata.siteUrl}${pathname}`, [
+    siteMetadata,
+    pathname,
+  ])
+
+  const encodedUrl = React.useMemo(() => encodeURIComponent(url), [url])
+
   return (
     <Layout>
       <div className="blogTemplate">
@@ -21,13 +43,31 @@ const BlogTemplate = ({ data }) => {
             </div>
             <div className="shareContainer">
               <span className="shareElement">
-                <FiLinkedin />
+                <a
+                  href={`https://www.linkedin.com/shareArticle/?mini=true&url=${encodedUrl}&title=${encodedTitle}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FiLinkedin />
+                </a>
               </span>
               <span className="shareElement">
-                <FiFacebook />
+                <a
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FiFacebook />
+                </a>
               </span>
               <span className="shareElement">
-                <FiTwitter />
+                <a
+                  href={`https://twitter.com/intent/tweet/?url=${encodedUrl}&text=${encodedTitle}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FiTwitter />
+                </a>
               </span>
             </div>
           </div>
@@ -36,7 +76,7 @@ const BlogTemplate = ({ data }) => {
             fluid={frontmatter.featuredImage.childImageSharp.fluid}
           />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="article" dangerouslySetInnerHTML={{ __html: html }}></div>
       </div>
     </Layout>
   )
@@ -58,6 +98,12 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        siteUrl
       }
     }
   }
