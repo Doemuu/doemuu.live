@@ -15,7 +15,7 @@ const experience = {
       description:
         "Organising, being part of the night life of swiss cities like Lucerne and Zurich",
       location: "Zurich ZH CH",
-      date: "Sepetemeber 2016 - December 2017",
+      date: "September 2016 - December 2017",
     },
     {
       job: "Sommerjob",
