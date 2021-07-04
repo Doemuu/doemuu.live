@@ -14,11 +14,11 @@ const Timeline = () => (
   <VerticalTimeline>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: "var(--secondary)", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid  var(--secondary)" }}
+      contentStyle={{ background: "var(--primary)", color: "#fff" }}
+      contentArrowStyle={{ borderRight: "7px solid  var(--primary)" }}
       date="Juli. 2021 - November. 2021"
       dateClassName="activedate"
-      iconStyle={{ background: " var(--secondary)", color: "#fff" }}
+      iconStyle={{ background: " var(--primary)", color: "#fff" }}
       icon={<IoIosJet />}
     >
       <h3 className="vertical-timeline-element-title">
@@ -35,10 +35,7 @@ const Timeline = () => (
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: "var(--primary)", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid  var(--primary)" }}
       date="August. 2019 - July. 2020"
-      dateClassName="activedate"
       iconStyle={{ background: " var(--primary)", color: "#fff" }}
       icon={<FaLaptopCode />}
     >
