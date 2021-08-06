@@ -1,3 +1,5 @@
+const cantons = require("./src/assets/cantons")
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
@@ -36,4 +38,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  const cantonPageTemplate = require.resolve("./src/templates/cantonTemplate.js")
+
+  cantons.forEach(canton =>
+    createPage({
+      path: `tour-de-suisse/${canton.id.toLowerCase()}`,
+      component: cantonPageTemplate,
+      context: {
+        canton,
+      },
+    })
+  )
 }
