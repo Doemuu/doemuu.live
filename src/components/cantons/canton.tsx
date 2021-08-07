@@ -24,7 +24,7 @@ const Canton = ({
 
   return (
     <Link
-      to={`/tour-de-suisse/${id.toLowerCase()}`}
+      to={`/tour-de-suisse/${id.toLowerCase()}#album`}
       css={`
         &:hover {
           text-decoration: none;
