@@ -1,0 +1,24 @@
+.map {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#album {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 15px;
+  min-height:100vh;
+  align-items: center;
+  justify-content: center;
+  .picture {
+    width: 40%;
+    height: 65%;
+    margin: 20px;
+    min-width: 250px;
+    min-height: 260px;
+    max-width: 650px;
+    max-height: 660px;
+    border-radius: 5%;
+  }
+}

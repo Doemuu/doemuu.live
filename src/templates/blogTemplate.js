@@ -2,7 +2,6 @@ import React from "react"
 import { useLocation } from "@reach/router"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../components/layout"
 import { FiLinkedin, FiFacebook, FiTwitter } from "react-icons/fi"
 

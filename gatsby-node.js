@@ -46,6 +46,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: `tour-de-suisse/${canton.id.toLowerCase()}`,
       component: cantonPageTemplate,
       context: {
+        img1: `tds/${canton.images?.[0]}`,
+        img2: `tds/${canton.images?.[1]}`,
+        img3: `tds/${canton.images?.[2]}`,
         canton,
       },
     })

@@ -11,6 +11,7 @@ const cantons = [
     textX: 424.31271,
     textY: 358.20685,
     circleTransform: "translate(79.76675,194.84656)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
   },
   {
     name: "Uri",
@@ -71,6 +72,7 @@ const cantons = [
     textX: "391.59177",
     textY: "420.17184",
     circleTransform: "translate(76.86575,257.69584)",
+    images: ["zug1.jpg", "zug2.jpg", "zug3.jpg"],
   },
   {
     name: "Graubünden",
