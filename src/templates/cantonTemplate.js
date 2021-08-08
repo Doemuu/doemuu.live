@@ -20,9 +20,27 @@ const TDS = ({ data, pageContext: { canton } }) => {
         <Map activeCanton={canton.id} />
       </div>
       <div id="album">
-        <Img className="picture" fluid={data?.img1?.childImageSharp?.fluid} />
-        <Img className="picture" fluid={data?.img2?.childImageSharp?.fluid} />
-        <Img className="picture" fluid={data?.img3?.childImageSharp?.fluid} />
+        <div className="pictureFrame">
+          <div className="pictureDescription">
+            <h3 className="titleText">{canton.descriptions?.[0].title}</h3>
+            <p className="bodyText">{canton.descriptions?.[0].body}</p>
+          </div>
+          <Img className="picture" fluid={data?.img1?.childImageSharp?.fluid} />
+        </div>
+        <div className="pictureFrame">
+          <div className="pictureDescription">
+            <h3 className="titleText">{canton.descriptions?.[1].title}</h3>
+            <p className="bodyText">{canton.descriptions?.[1].body}</p>
+          </div>
+          <Img className="picture" fluid={data?.img2?.childImageSharp?.fluid} />
+        </div>
+        <div className="pictureFrame">
+          <div className="pictureDescription">
+            <h3 className="titleText">{canton.descriptions?.[2].title}</h3>
+            <p className="bodyText">{canton.descriptions?.[2].body}</p>
+          </div>
+          <Img className="picture" fluid={data?.img3?.childImageSharp?.fluid} />
+        </div>
       </div>
     </>
   )

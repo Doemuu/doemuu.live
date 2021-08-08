@@ -16,15 +16,42 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  .picture {
-    width: 40%;
+  .pictureFrame {
     height: 65%;
-    margin:1px;
+    width: 40%;
     min-width: 250px;
     min-height: 260px;
     max-width: 650px;
     max-height: 660px;
-    border-radius: 5px;
-    border: solid 5px var(--secondary);
+    &:hover {
+      .picture {
+        border-color: var(--primary);
+        opacity: 15%;
+        transition: opacity 2s;
+      }
+      .pictureDescription {
+        opacity: 1;
+        transition: opacity 2s;
+      }
+    }
+    .pictureDescription {
+      position: absolute;
+      opacity: 0;
+      z-index: 999;
+      margin: 25px;
+    }
+    .bodyText {
+      position: relative;
+      transform: translateY(-10px);
+    }
+    .picture {
+      margin: 1px;
+      min-width: 249px;
+      min-height: 259px;
+      max-width: 649px;
+      max-height: 659px;
+      border-radius: 5px;
+      border: solid 5px var(--secondary);
+    }
   }
 }
