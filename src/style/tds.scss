@@ -26,6 +26,7 @@
     max-width: 650px;
     max-height: 660px;
     border: solid 5px var(--secondary);
+    border-radius: 5px;
     &:hover {
       border-color: var(--primary);
       .picture {
