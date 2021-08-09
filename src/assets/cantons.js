@@ -79,9 +79,21 @@ const cantons = [
     circleTransform: "translate(76.86575,257.69584)",
     images: ["zug1.jpg", "zug2.jpg", "zug3.jpg"],
     descriptions: [
-      { title: "Zytturm", body: "body" },
-      { title: "Zug Bahnhof", body: "" },
-      { title: "Höllgrotten Baar", body: "" },
+      {
+        title: "Zytturm",
+        body:
+          "Der Zytturm ist das Wahrzeichen der Stadt Zug. Er ist 52 Meter hoch und liegt am Kolinplatz. Er diente lange Zeit als Feuerwachturm. Der Zytturm wurde bereits im 13. Jahrhundert erbaut. 1478 bis 1480 wurde er erhöht. 1557 erhielt er seine heutige Form mit der Wachtstube, den Erkern und dem steilen Walmdach. 1574 baute man die grosse Uhr ein. Die letzte grosse Restaurierung des Zytturms fand 1952 statt.",
+      },
+      {
+        title: "Zug",
+        body:
+          "Zug liegt auf 425 m ü. M. am Zugersee, eingebettet zwischen dem nordöstlichen Ufer des Zugersees und dem Fuss und den unteren Westhängen des Zugerbergs, in der Zentralschweiz, im Schweizer Mittelland. Die Stadt Zug liegt 23 km südlich von Zürich (Luftlinie). Der Name Zug geht auf das althochdeutsche Gattungswort zug ‹Ziehen, Zug, (Fisch-)Fang, das Einziehen der Fischernetze› zurück. Das Wort wurde schon im Mittelhochdeutschen auch zu einem Rechtsbegriff, also ‹Fischereigerechtigkeit, Fischenz›, und zu einem Örtlichkeitsbegriff, also ‹Stelle, Ort, Gewässerteil, wo man fischen darf›. Das die Stelle bezeichnende Gattungswort wurde allmählich auf die dort liegende Fischersiedlung übertragen und damit sekundär zum Ortsnamen. Im Fall der heutigen Stadt Zug liegt vermutlich eine Benennung aus der Perspektive des wesentlich älteren Ortes Cham vor.",
+      },
+      {
+        title: "Höllgrotten Baar",
+        body:
+          "Die Höllgrotten sind ein Verbund von Tropfsteinhöhlen im Lorzentobel in der Nähe von Baar im Kanton Zug. Die Höhlen weisen kleine Seen, Stalaktiten, Stalagmiten und Stalagnate in den verschiedensten Farben auf. Jede Höhle hat ihr eigenes Bild. In der Wurzelgrotte im oberen Teil der Höhle sind inkrustierte Baumwurzeln zu sehen. Die Einheimischen nennen das Gebiet seit jeher «Höll», was ursprünglich von «Hell» kam, weil es eine «Waldlichtung im Lorzentobel» meinte. Allmählich erhielt «Höll» seine heutige Bedeutung, weil das Tobel entlegen und zuweilen finster war. Pfarrer Johann Josef Zehnder von Neuheim versuchte der Bevölkerung um 1860 den Namen «Höll» vergebens auszureden. Als dann 1863 die Grotten entdeckt wurden, schien vollends klar, dass hier dämonische Kräfte am Werk gewesen sein mussten. Beim Anblick der Tropfsteingebilde dachten die Leute eher an magische, zauberhafte Kräfte.",
+      },
     ],
   },
   {

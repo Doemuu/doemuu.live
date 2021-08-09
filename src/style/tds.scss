@@ -17,15 +17,18 @@
   align-items: center;
   justify-content: center;
   .pictureFrame {
+    position: relative;
+    margin: 1px;
     height: 65%;
     width: 40%;
     min-width: 250px;
     min-height: 260px;
     max-width: 650px;
     max-height: 660px;
+    border: solid 5px var(--secondary);
     &:hover {
+      border-color: var(--primary);
       .picture {
-        border-color: var(--primary);
         opacity: 15%;
         transition: opacity 2s;
       }
@@ -39,19 +42,24 @@
       opacity: 0;
       z-index: 999;
       margin: 25px;
-    }
-    .bodyText {
-      position: relative;
-      transform: translateY(-10px);
+      left: 2px;
+      right: 2px;
+      top: 2px;
+      bottom: 2px;
+      overflow-y: auto;
+      .titleText {
+        font-weight: bold !important;
+      }
+      .bodyText {
+        position: relative;
+        transform: translateY(-10px);
+      }
     }
     .picture {
-      margin: 1px;
-      min-width: 249px;
-      min-height: 259px;
-      max-width: 649px;
-      max-height: 659px;
-      border-radius: 5px;
-      border: solid 5px var(--secondary);
+      min-width: 244px;
+      min-height: 250px;
+      max-width: 644px;
+      max-height: 650px;
     }
   }
 }
