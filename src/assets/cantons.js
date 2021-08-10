@@ -27,6 +27,20 @@ const cantons = [
     textX: "445.55472",
     textY: "518.83783",
     circleTransform: "translate(101.03875,355.35384)",
+    images: ["altdorf1.jpg", "altdorf2.jpg", "uc.jpg"],
+    descriptions: [
+      {
+        title: "Telldenkmal",
+        body:
+          "William Tell is a folk hero of Switzerland. According to the legend, Tell was an expert marksman with the crossbow who assassinated Albrecht Gessler, a tyrannical reeve of the Austrian dukes of the House of Habsburg positioned in Altdorf, in the canton of Uri. Tell's defiance and tyrannicide encouraged the population to open rebellion and a pact against the foreign rulers with neighbouring Schwyz and Unterwalden, marking the foundation of the Swiss Confederacy. Set in the early 14th century (traditional date 1307, during the rule of Albert of Habsburg), the first written records of the legend date to the latter part of the 15th century, when the Swiss Confederacy was gaining military and political influence. Tell is a central figure in Swiss national historiography, along with Arnold von Winkelried the hero of Sempach (1386). He was important as a symbol during the formative stage of modern Switzerland in the 19th century, known as the period of Restoration and Regeneration, as well as in the wider history of 18th- to 19th-century Europe as a symbol of resistance against aristocratic rule, especially in the Revolutions of 1848 against the House of Habsburg which still ruled Austria five hundred years later.",
+      },
+      {
+        title: "Altdorf",
+        body:
+          "Altdorf (sometimes written as Altdorf UR in order to distinguish it from the other 'Altdorfs'; German for 'old village') is a historic town and municipality in Switzerland. It is the capital of the Swiss canton of Uri. The municipality covers an area of 10.21 square kilometres (3.94 sq mi) and is located about 2 kilometres (1.2 mi) south of the mouth of the Reuss, which flows into the Lake Lucerne, here called the Urnersee. The town Altdorf lies at an altitude of 458 metres (1,503 ft) above sea level on the right, eastern bank of the Reuss, a flat, alluvial land of up to 2 kilometres (1.2 mi) diameter between otherwise steep and high Alpine mountains of around 3,000 metres (9,800 ft) elevation, but the municipality also covers the Alpine pasture landscape of Eggbergen about 1,000 metres (3,300 ft) above Altdorf. It is also the junction towards to the two passes Saint Gotthard to the south, a major north–south axis through the Alps, and the Klausen Pass to the east. Altdorf sits on the Gotthard line and is the last railway station before the entrance into the new Gotthard Base Tunnel, the world's longest railway tunnel. The official language of Altdorf is (the Swiss variety of Standard) German, but the main spoken language is the local variant of the Alemannic Swiss German dialect.",
+      },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Bern",
@@ -37,6 +51,12 @@ const cantons = [
     textX: "181.84575",
     textY: "489.99585",
     circleTransform: "translate(-162.06585,326.94684)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Jura",
@@ -47,6 +67,12 @@ const cantons = [
     textX: "109.88175",
     textY: "350.55984",
     circleTransform: "translate(-188.52543,194.9781)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Obwalden",
@@ -57,6 +83,24 @@ const cantons = [
     textX: "331.21371",
     textY: "507.77585",
     circleTransform: "translate(17.88475,351.48584)",
+    images: ["sarnen1.jpg", "sarnen2.jpg", "sarnen3.jpg"],
+    descriptions: [
+      {
+        title: "Canton Obwalden",
+        body:
+          "Obwalden, also Obwald, is one of the 26 cantons forming the Swiss Confederation. It is composed of seven municipalities and the seat of the government and parliament is in Sarnen. It is traditionally considered a 'half-canton', the other half being Nidwalden. Obwalden lies in Central Switzerland and contains the geographical centre of Switzerland. It is bordered by the canton of Lucerne to the north, the canton of Nidwalden and Uri to the east and the canton of Bern to the south. The canton is essentially in the valley of the Sarner Aa south of Lake Lucerne, with an enclave around Engelberg. It is one of the smallest cantons. The largest town is Sarnen, followed by Kerns and Alpnach. Together with Nidwalden, Obwalden was part of the forest canton of Unterwalden, one of the three participants in the foundation of the Old Swiss Confederacy, named in the Pact of Brunnen of 1315 with Uri and Schwyz. The division of Unterwalden into two separate territories, Nidwalden and Obwalden, appears to develop over the course of the 14th and 15th centuries.",
+      },
+      {
+        title: "Sarnen",
+        body:
+          "Sarnen is a small historic town, a municipality, and the capital of the canton of Obwalden situated on the northern shores of Lake Sarnen (German: Sarnersee) in Switzerland. It has a population of just over 10,000 and is surrounded by countryside and mountains. Sarnen is located 20 km south of Lucerne. The official language of Sarnen is (the Swiss variety of Standard) German, but the main spoken language is the local variant of the Alemannic Swiss German dialect.",
+      },
+      {
+        title: "Lake Sarnen",
+        body:
+          "Lake Sarnen (German: Sarnersee) is a lake in the Swiss canton of Obwalden. The lake is on the Sarner Aa, which flows out of the Lake Lungern, through the Lake Sarnen, and into Lake Lucerne. The municipalities of Sarnen and Sachseln are located on the shores of the lake, and the Brünig railway line follows the eastern shore. The lake's area is about 7.5 km2 (2.9 sq mi) and its maximum depth is 51 m. It is about 5.7 km (3.5 mi) long and, at its widest, 1.6 km (0.99 mi) wide",
+      },
+    ],
   },
   {
     name: "Schwyz",
@@ -67,6 +111,12 @@ const cantons = [
     textX: "408.24173",
     textY: "463.81683",
     circleTransform: "translate(102.97275,308.94184)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Zug",
@@ -105,6 +155,12 @@ const cantons = [
     textX: "646.5788",
     textY: "523.6828",
     circleTransform: "translate(300.15675,360.25484)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Fribourg",
@@ -115,6 +171,12 @@ const cantons = [
     textX: "85.421761",
     textY: "550.43481",
     circleTransform: "translate(-232.61205,380.49384)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Solothurn",
@@ -125,6 +187,24 @@ const cantons = [
     textX: "199.67274",
     textY: "411.33383",
     circleTransform: "translate(-145.52385,248.02674)",
+    images: ["solothurn1.jpg", "solothurn2.jpg", "solothurn3.jpg"],
+    descriptions: [
+      {
+        title: "St. Ursenkathedrale",
+        body:
+          "Die St. Ursenkathedrale (auch Kathedrale St. Urs und Viktor) ist die Kathedrale des römisch-katholischen Bistums Basel in der Stadt Solothurn, Schweiz. Das den Märtyrern Ursus und Victor geweihte frühklassizistische Kirchengebäude wurde auf einem Grundstück, wo seit dem früheren Mittelalter vermutlich schon zwei Vorgängerbauten gestanden waren, 1762 von Gaetano Matteo Pisoni aus Ascona begonnen und 1773 von seinem Neffen Paolo Antonio Pisoni vollendet. Das Innere ist mit Stuckaturen von Francesco Pozzi verziert. Zum umfangreichen Domschatz gehören unter anderem das Hornbacher Sakramentar, eine Marienstatue und eine Handschrift, die um 983 im Kloster Reichenau entstanden ist. Der 66 Meter hohe Zwiebelturm wurde lange Zeit von einem Turmwächter bewohnt. Es existiert eine Zeichnung von Peter Thumb aus dem Jahr 1708, welche darauf hinweist, dass bereits für die vorherige Stiftskirche ein zweiter, ebenfalls nicht realisierter Turm zur Diskussion stand. Die Kirche St. Urs und Viktor war seit dem Mittelalter das Münster des St. Ursenstifts und wurde in ihrer heutigen Bauform 1828 zur Bischofskirche des nach Solothurn umgezogenen Bistums Basel.",
+      },
+      {
+        title: "Solothurn",
+        body:
+          "Solothurn is a municipality with inhabitants and the capital of the canton of Solothurn. The city, with a population of just under 17,000, forms a district in its own right. The cantonal capital of Solothurn is also a centre of a region with around 79,000 inhabitants. Because of the former seat of the French embassy in the Old Confederation (16th-18th centuries), Solothurn is traditionally called 'Ambassadors' City', and also 'Saint Ursus City' because of its patron saint and the name of the cathedral. The old town in its current state was largely built between 1520 and 1790 and accordingly features a mixture of different architectural styles and formal idioms, but above all Baroque, which is why Solothurn is sometimes referred to as the 'most beautiful Baroque town in Switzerland'.",
+      },
+      {
+        title: "Canton Solothurn",
+        body:
+          "Foundation of the village of Salodurum in the time of the Roman emperor Tiberius. The territory of the canton comprises land acquired by the former town, mainly in the Middle Ages. For that reason the shape of the canton is irregular and includes two exclaves along the French border, separated from the rest of the canton by Basel-Land, which form separate districts of the canton. In 1481, the canton became a member of the military alliance of the former Swiss confederation. At the end of the Reformation, Solothurn maintained its Catholic religion. Between 1798 and 1803 the canton was part of the Helvetic Republic. In 1803 Solothurn was one of the 19 Swiss cantons that were reconstituted by Napoleon (Mediation). In 1830, the population rebelled against the aristocratic regime and the canton became definitely liberal-democratic. Even though the population was strictly Roman Catholic, Solothurn did not join the Catholic separatist movement (Sonderbund) in 1845–7. Similarly, the federal constitutions of 1848 and 1874 were approved. The current constitution of the canton dates from 1987.",
+      },
+    ],
   },
   {
     name: "Genève",
@@ -135,6 +215,12 @@ const cantons = [
     textX: "-144.34296",
     textY: "742.57983",
     circleTransform: "translate(-453.00225,572.90884)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Basel-Stadt",
@@ -145,6 +231,24 @@ const cantons = [
     textX: "183.20375",
     textY: "290.31406",
     circleTransform: "translate(-130.05325,132.96424)",
+    images: ["basel1.jpg", "basel2.jpg", "basel3.jpg"],
+    descriptions: [
+      {
+        title: "Basel Minster",
+        body:
+          "Basel Minster is one of the main sights and a landmark of the city of Basel in Switzerland. The cathedral dominates the cityscape with its red sandstone finish and colourful roof tiles, its two slender steeples and its cross-penetrating main roofs. The former bishop's church, now Protestant-Reformed, was built between 1019 and 1500 in Romanesque and Gothic styles. In front of the cathedral is the Münsterplatz, named after it, which is lined with many former cathedral houses.",
+      },
+      {
+        title: "Basel",
+        body:
+          "Basel is considered the cultural capital of Switzerland. With nearly forty museums throughout the canton and a wide range of cultural offerings, Basel is famous for its numerous world-class art and cultural institutions, which also makes the city one of the largest cultural centres in Europe in relation to its size and population. The municipal art museum here exhibits what is generally considered to be the most important public art collection in Switzerland. Together with the 'Amerbach Cabinet' acquired by the city in 1661, the collection is considered the oldest art museum in the world open to the public. Founded in 1460, the University of Basel is the oldest in Switzerland and one of the oldest in Europe. Over the centuries, Erasmus of Rotterdam, Paracelsus, Daniel Bernoulli, Leonhard Euler, Friedrich Nietzsche, Karl Jaspers, the Nobel Prize winner Tadeus Reichstein and the philosopher Jeanne Hersch have all taught and conducted research here. Basel was also the venue of the first World Zionist Congress in 1897, led by Theodor Herzl. In total, the congress was held ten times in the city on the bend of the Rhine until the founding of the state of Israel in 1948, more than in any other city in the world.",
+      },
+      {
+        title: "Basel Zoo",
+        body:
+          "Der Zoo Basel ist ein zoologischer Garten in Basel. Er befindet sich im Stadtquartier Basel-Bachletten am Fluss Birsig. Er wurde 1874 eröffnet und ist somit der älteste Zoo der Schweiz. Mit 7017 (2014) Tieren in 628 Arten (58 Säugetierarten, 88 Vogelarten, 41 Reptilienarten, 10 Amphibienarten, 284 Fischarten und 147 Arten an wirbellosen Tieren) besitzt er auch mit Abstand den grössten Tierbestand. Aufgrund von Zuchterfolgen wie bei Panzernashorn, Zwergflusspferd oder Westlichem Flachlandgorilla wurde der Stadtzoo weit über die Landesgrenzen hinaus bekannt und gilt daher, trotz seiner relativ kleinen Fläche von rund 11 Hektaren, als einer der bedeutenden Zoos von Europa. Im Jahr 2016 zählte er 960'685 Besuchende.",
+      },
+    ],
   },
   {
     name: "Basel-Landschaft",
@@ -155,6 +259,24 @@ const cantons = [
     textX: "242.18776",
     textY: "323.96283",
     circleTransform: "translate(-96.35465,152.02864)",
+    images: ["liestal1.jpg", "liestal2.jpg", "liestal3.jpg"],
+    descriptions: [
+      {
+        title: "Basel Landschaft",
+        body:
+          "At the time of the episcopal rule (1305), Liestal received the Baselstab, which was a regional version of the crozier referring to the bishopric and was red in colour. Special features were the seven Gothic 'crabs' (spots) on the pommel and the red edge of the shield. After the separation of the two Basel cantons, the canton of Basel-Landschaft adopted the red staff as its cantonal coat of arms. To avoid confusion, Liestal made a town seal known since 1407 the official town coat of arms in 1921: The lower half is red, the upper half silver. On it is a growing red crozier with seven Gothic crabs. Flag: white-red.",
+      },
+      {
+        title: "Liestal",
+        body:
+          "The name Liestal was first mentioned in 1225, and the settlement dates at least from Roman times. The development of the town is due to its strategic location on the road between the first bridge over the Rhine at Basel and the St. Gotthard Pass. Citizens of Liestal participated in the Burgundian Wars in 1476 and 1477 against Charles the Bold. In 1501, the mayor swore allegiance to the Swiss Confederation, and this caused repeated conflict with neighboring Rheinfelden, which belonged to the Habsburgs. In the 17th century, Liestal rebelled against Basel as part of the Farmers' Rebellion and was occupied by troops from that city. Three leaders of the rebellion were beheaded in Basel. In 1789, the town enthusiastically hailed the French call for freedom and equality. It celebrated Napoleon, when he traveled through town in 1797. After his fall, the earlier subjection to Basel was re-established. The French July Revolution of 1830 also caused upheaval in Liestal. A provisional government was established, and the town was chosen as the capital of a new canton on 17 March 1832.",
+      },
+      {
+        title: "Liestaler Aussichtsturm",
+        body:
+          "The Liestal lookout tower stands at the highest point of the Schleifenberg. The 30 m high tower is very old, it was built in 1891 and completely renovated in 2007. You can see that the tower is very old from its construction. Many connections are riveted or screwed. The tower reminds a little of the Eiffel Tower in Paris. The tower rises far above the treetops, which provides a 360° view. The view from the tower is magnificent. You can see the front Ergolz valley with the villages of Lausen, Liestal, Frenkendorf and the front Waldenburg valley with the village of Bubendorf.",
+      },
+    ],
   },
   {
     name: "Nidwalden",
@@ -165,6 +287,12 @@ const cantons = [
     textX: "385.60672",
     textY: "493.69785",
     circleTransform: "translate(41.08975,330.21384)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "St. Gallen",
@@ -175,6 +303,12 @@ const cantons = [
     textX: "548.37677",
     textY: "333.05682",
     circleTransform: "translate(261.54575,169.70684)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Appenzell Ausserrhoden",
@@ -185,6 +319,12 @@ const cantons = [
     textX: "538.12378",
     textY: "353.52783",
     circleTransform: "translate(241.30675,190.97891)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Appenzell Innerrhoden",
@@ -195,6 +335,12 @@ const cantons = [
     textX: "590.48474",
     textY: "377.18085",
     circleTransform: "translate(266.44675,207.41641)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Glarus",
@@ -205,6 +351,12 @@ const cantons = [
     textX: "517.67474",
     textY: "457.34885",
     circleTransform: "translate(195.72975,302.23984)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Wallis",
@@ -215,6 +367,12 @@ const cantons = [
     textX: "160.51677",
     textY: "730.39587",
     circleTransform: "translate(-183.29955,567.23984)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Neuchâtel",
@@ -225,6 +383,12 @@ const cantons = [
     textX: "51.097755",
     textY: "470.50085",
     circleTransform: "translate(-278.00755,316.34984)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Vaud",
@@ -235,6 +399,12 @@ const cantons = [
     textX: "-31.100256",
     textY: "625.1358",
     circleTransform: "translate(-344.70725,469.44984)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Schaffhausen",
@@ -245,6 +415,12 @@ const cantons = [
     textX: "384.0000",
     textY: "238.31146",
     circleTransform: "translate(96.20375,82.68484)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Thurgau",
@@ -255,6 +431,12 @@ const cantons = [
     textX: "493.83676",
     textY: "300.13083",
     circleTransform: "translate(150.35075,131.99734)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Ticino",
@@ -265,6 +447,12 @@ const cantons = [
     textX: "483.91574",
     textY: "731.31982",
     circleTransform: "translate(186.06075,575.67784)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Aargau",
@@ -275,6 +463,16 @@ const cantons = [
     textX: "314.60474",
     textY: "348.16284",
     circleTransform: "translate(-31.42825,186.14434)",
+    images: ["aarau1.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      {
+        title: "Schlössli",
+        body:
+          "The Schlössli is a castle in the Swiss town of Aarau. Located on the north-eastern edge of the old town, it dates from the 13th century and is the oldest surviving building in the town. Today it houses the Aarau City Museum.",
+      },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
   {
     name: "Luzern",
@@ -285,6 +483,12 @@ const cantons = [
     textX: "347.06674",
     textY: "453.20285",
     circleTransform: "translate(27.55375,297.33924)",
+    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    descriptions: [
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "UNDER CONSTRUCTION", body: "" },
+    ],
   },
 ]
 
