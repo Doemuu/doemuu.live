@@ -27,7 +27,7 @@ const cantons = [
     textX: "445.55472",
     textY: "518.83783",
     circleTransform: "translate(101.03875,355.35384)",
-    images: ["altdorf1.jpg", "altdorf2.jpg", "uc.jpg"],
+    images: ["altdorf1.jpg", "altdorf2.jpg", "altdorf3.jpg"],
     descriptions: [
       {
         title: "Telldenkmal",
@@ -111,7 +111,7 @@ const cantons = [
     textX: "408.24173",
     textY: "463.81683",
     circleTransform: "translate(102.97275,308.94184)",
-    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    images: ["schwyz1.jpg", "schwyz2.jpg", "schwyz3.jpg"],
     descriptions: [
       { title: "UNDER CONSTRUCTION", body: "" },
       { title: "UNDER CONSTRUCTION", body: "" },
@@ -351,7 +351,7 @@ const cantons = [
     textX: "517.67474",
     textY: "457.34885",
     circleTransform: "translate(195.72975,302.23984)",
-    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    images: ["glarus1.jpg", "glarus2.jpg", "glarus3.jpg"],
     descriptions: [
       { title: "UNDER CONSTRUCTION", body: "" },
       { title: "UNDER CONSTRUCTION", body: "" },
@@ -463,7 +463,7 @@ const cantons = [
     textX: "314.60474",
     textY: "348.16284",
     circleTransform: "translate(-31.42825,186.14434)",
-    images: ["aarau1.jpg", "uc.jpg", "uc.jpg"],
+    images: ["aarau1.jpg", "aarau2.jpg", "aarau3.jpg"],
     descriptions: [
       {
         title: "Schlössli",
@@ -483,7 +483,7 @@ const cantons = [
     textX: "347.06674",
     textY: "453.20285",
     circleTransform: "translate(27.55375,297.33924)",
-    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    images: ["luzern1.jpg", "luzern2.jpg", "luzern3.jpg"],
     descriptions: [
       { title: "UNDER CONSTRUCTION", body: "" },
       { title: "UNDER CONSTRUCTION", body: "" },
