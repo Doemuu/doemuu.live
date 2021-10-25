@@ -470,8 +470,12 @@ const cantons = [
         body:
           "The Schlössli is a castle in the Swiss town of Aarau. Located on the north-eastern edge of the old town, it dates from the 13th century and is the oldest surviving building in the town. Today it houses the Aarau City Museum.",
       },
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
+      {
+        title: "Aarau",
+        body:
+          "The earliest use of the place name was in 1248 (in the form Arowe), and probably referred to the settlement in the area before the founding of the city. It comes, along with the name of the River Aare (which was called Arula, Arola, and Araris in early times), from the German word Au, meaning floodplain.",
+      },
+      { title: "Wildlifepark Roggenhausen", body: "The wildlife park is located to the west of the city of Aarau. It is located in the valley of the same name and embedded in a natural idyll that is rare far and wide. Wild animals, rare domestic animal species, a nature trail, a fruit tree orchard and a restaurant with a large playground await you at Roggenhausen Wildlife Park. The park is located to the west of the town of Aarau and is embedded in a rare natural idyll in the valley of the same name. The entire park area covers an area of around 15 hectares." },
     ],
   },
   {
