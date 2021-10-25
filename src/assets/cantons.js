@@ -485,9 +485,21 @@ const cantons = [
     circleTransform: "translate(27.55375,297.33924)",
     images: ["luzern1.jpg", "luzern2.jpg", "luzern3.jpg"],
     descriptions: [
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
+      {
+        title: "Lion Monument",
+        body:
+          "From the early 17th century, a regiment of Swiss Guards had served as part of the Royal Household of France. On 6 October 1789, King Louis XVI had been forced to move with his family from the Palace of Versailles to the Tuileries Palace in Paris. In June 1791 he tried to flee to Montmédy near the frontier, where troops under royalist officers were concentrated. In the 1792 10th of August Insurrection, revolutionaries stormed the palace. Fighting broke out spontaneously after the Royal Family had been escorted from the Tuileries to take refuge with the Legislative Assembly. The Swiss Guards ran low on ammunition and were overwhelmed by superior numbers. A note written by the King half an hour after firing had commenced has survived, ordering the Swiss to retire and return to their barracks. Delivered in the middle of the fighting, this was only acted on after their position had become untenable.",
+      },
+      {
+        title: "Lucerne",
+        body:
+          "After the fall of the Roman Empire beginning in the 6th century, Germanic Alemannic peoples increased their influence on this area of present-day Switzerland. Around 750 the Benedictine Monastery of St. Leodegar was founded, which was later acquired by Murbach Abbey in Alsace in the middle of the 9th century, and by this time the area had become known as Luciaria. The origin of the name is uncertain, it is possibly derived from the Latin name of the pike, lucius, thus designating a pike fishing spot in the river Reuss. Derivation from the theonym Lugus has been suggested but is phonetically implausible. In any case, the name was associated by popular etymology with Latin lucerna 'lantern' from an early time.",
+      },
+      {
+        title: "Pilatus",
+        body:
+          "Pilatus, also often referred to as Mount Pilatus, is a mountain massif overlooking Lucerne in Central Switzerland. It is composed of several peaks, of which the highest (2,128.5 m (6,983 ft)) is named Tomlishorn.",
+      },
     ],
   },
 ]
