@@ -353,9 +353,21 @@ const cantons = [
     circleTransform: "translate(195.72975,302.23984)",
     images: ["glarus1.jpg", "glarus2.jpg", "glarus3.jpg"],
     descriptions: [
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
+      {
+        title: "Volksgarten",
+        body:
+          "The Volksgarten and the fountain are dedicated to the two most federally influencial politicians of Glarus. Those are Joachim Heer (Bundespräsident 1875-1878) and Johann Jakob Blumer (Bundesrichter 1848 - 1875).",
+      },
+      {
+        title: "Glarus",
+        body:
+          "Glarus is first mentioned in the early 9th Century in Latin as Clarona. In 1178 it was first mentioned in German as Glarus. On 10 February 878, the Emperor Charles the Fat gave his wife Richgard or Richardis the monasteries of Säckingen, of St. Felix and of Regula in Zürich as a royal estate. This land grant included extensive political rights and a large estate. This estate covered land in the Rhine and Frick valleys, the southern Hotzenwald, land in Zürich, along Lake Walen and the valley of Glarus. Glarus remained under the Säckingen Abbey until 1395 (intermittently under the overlordship of either the Counts of Lenzburg and Kyburg and/or Raetia Curiensis), when the Glarus valley broke away from the Abbey and became independent.",
+      },
+      {
+        title: "Obersee",
+        body:
+          "The lake can be reached from the Zurich conurbation in just under an hour by car, and when you drive over the last crest before the crystal-clear mountain lake, the view of the Glarus foothills makes you feel like you're in British Columbia. At the same time, the Obersee is an insider's tip for fishermen who go after trout and perch with a fly rod or heavy peg. Visitors can look directly over the fishermen's rod tips on the pram-friendly walk around the lake.",
+      },
     ],
   },
   {
@@ -475,7 +487,11 @@ const cantons = [
         body:
           "The earliest use of the place name was in 1248 (in the form Arowe), and probably referred to the settlement in the area before the founding of the city. It comes, along with the name of the River Aare (which was called Arula, Arola, and Araris in early times), from the German word Au, meaning floodplain.",
       },
-      { title: "Wildlifepark Roggenhausen", body: "The wildlife park is located to the west of the city of Aarau. It is located in the valley of the same name and embedded in a natural idyll that is rare far and wide. Wild animals, rare domestic animal species, a nature trail, a fruit tree orchard and a restaurant with a large playground await you at Roggenhausen Wildlife Park. The park is located to the west of the town of Aarau and is embedded in a rare natural idyll in the valley of the same name. The entire park area covers an area of around 15 hectares." },
+      {
+        title: "Wildlifepark Roggenhausen",
+        body:
+          "The wildlife park is located to the west of the city of Aarau. It is located in the valley of the same name and embedded in a natural idyll that is rare far and wide. Wild animals, rare domestic animal species, a nature trail, a fruit tree orchard and a restaurant with a large playground await you at Roggenhausen Wildlife Park. The park is located to the west of the town of Aarau and is embedded in a rare natural idyll in the valley of the same name. The entire park area covers an area of around 15 hectares.",
+      },
     ],
   },
   {
