@@ -113,9 +113,21 @@ const cantons = [
     circleTransform: "translate(102.97275,308.94184)",
     images: ["schwyz1.jpg", "schwyz2.jpg", "schwyz3.jpg"],
     descriptions: [
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
+      {
+        title: "Wehrmann & Wehrbereitschaft",
+        body:
+          "The Wehrbereitschaft is a symbol of its time, of spiritual national defence. The depicted soldier symbolises strength and determination. Brandenberger, the sculptor, has created the right figure at the right time. A rock in the surf of fears in the face of the looming world war.",
+      },
+      {
+        title: "Schwyz",
+        body:
+          "While a few Roman era coins have been found in Schwyz, the earliest evidence of a settlement comes from the 8th century. The Alamanni cemetery at the parish church and the church itself are both from the first half of the 8th century. This first church was followed by a second ottonian church around 1000, which may have been destroyed by the 1117 Verona earthquake. In 1121 the third church building, a romanesque building, was consecrated. This was followed in the 15th Century by the much larger fourth church which was destroyed, along with much of the village, by fire in 1642. The fifth church, an early baroque church was replaced because of serious structural defects by the current late baroque church which was dedicated in 1774.",
+      },
+      {
+        title: "Museum of the Swiss Charters of Confederation",
+        body:
+          "First ideas for a national monument date back to the 600th anniversary of the Confederation in 1891. It was only realized in the 1930s when the Canton of Schwyz planned to move its state archive to a wing of the new building. The main part of the building was the exhibition hall for the Charter of 1291 which would lay on an 'Altar of the Fatherland'. The archive was built and opened in 1936. Murals on the façade and on the interior depict the Rütli Oath and Nicholas of Flüe. Four years later, the monumental sculpture 'Wehrbereitschaft' (Readiness to Defend) was erected in the park.",
+      },
     ],
   },
   {
