@@ -39,7 +39,11 @@ const cantons = [
         body:
           "Altdorf (sometimes written as Altdorf UR in order to distinguish it from the other 'Altdorfs'; German for 'old village') is a historic town and municipality in Switzerland. It is the capital of the Swiss canton of Uri. The municipality covers an area of 10.21 square kilometres (3.94 sq mi) and is located about 2 kilometres (1.2 mi) south of the mouth of the Reuss, which flows into the Lake Lucerne, here called the Urnersee. The town Altdorf lies at an altitude of 458 metres (1,503 ft) above sea level on the right, eastern bank of the Reuss, a flat, alluvial land of up to 2 kilometres (1.2 mi) diameter between otherwise steep and high Alpine mountains of around 3,000 metres (9,800 ft) elevation, but the municipality also covers the Alpine pasture landscape of Eggbergen about 1,000 metres (3,300 ft) above Altdorf. It is also the junction towards to the two passes Saint Gotthard to the south, a major north–south axis through the Alps, and the Klausen Pass to the east. Altdorf sits on the Gotthard line and is the last railway station before the entrance into the new Gotthard Base Tunnel, the world's longest railway tunnel. The official language of Altdorf is (the Swiss variety of Standard) German, but the main spoken language is the local variant of the Alemannic Swiss German dialect.",
       },
-      { title: "UNDER CONSTRUCTION", body: "" },
+      {
+        title: "Tellsplatte",
+        body:
+          "The Tellskapelle ('Tells chapel') is located on the Tellsplatte or Tellenplatte ('Tells slab') on the shore of Lake Lucerne at the foot of the Axenberg cliffs (an offshoot ridge of Glärnisch, 1,022 m), in the Sisikon municipality, canton of Uri, Switzerland. It is across the Bay of Uri (Urnersee) from the Rütli, some 4.3 km away. The Catholic chapel marks the site where according to legend, William Tell during a storm leapt from the boat of his captors (the Tellensprung 'leap of Tell') and escaped, allowing him to assassinate the tyrant Gessler and initiate the rebellion that led to the foundation of the Old Swiss Confederacy. The Tellenplatte is first mentioned in 1470 in the White Book of Sarnen, as Tellen blatten. The current chapel was built in 1879. It is decorated with four frescos by Ernst Stückelberg, realized in 1880-1882.",
+      },
     ],
   },
   {
