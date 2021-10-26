@@ -57,9 +57,21 @@ const cantons = [
     circleTransform: "translate(-162.06585,326.94684)",
     images: ["uc.jpg", "uc.jpg", "uc.jpg"],
     descriptions: [
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
+      {
+        title: "Federal Palace of Switzerland",
+        body:
+          "The central assembly building is dominated by a domed hall in the layout of a Swiss cross. It separates the two chambers of the National Council (south) and the Council of States (north). The dome itself has an external height of 64 metres (210 ft) that was exceptional at the time, but chosen to balance the total length of the three buildings. The mosaic in the center represents the federal coat of arms along with the Latin motto Unus pro omnibus, omnes pro uno (One for all, and all for one), surrounded by the coat of arms of the 22 cantons that existed in 1902. The coat of arms of the Canton of Jura, created in 1979, was later placed outside of the mosaic. The hall is dominated by the sculpture The Three Confederates (Die drei Eidgenossen) created by James André Vibert and referring to the legendary oath to fight for Switzerland (Rütlischwur).",
+      },
+      {
+        title: "Berne",
+        body:
+          "The etymology of the name 'Bern' is uncertain. According to the local legend, based on folk etymology, Berchtold V, Duke of Zähringen, the founder of the city of Bern, vowed to name the city after the first animal he met on the hunt, and this turned out to be a bear. It has long been considered likely that the city was named after the Italian city of Verona, which at the time was known as Bern in Middle High German. The city was sometimes referred to as Bern im Üechtland to distinguish it from Verona. As a result of the finding of the Bern zinc tablet in the 1980s, it is now more common to assume that the city was named after a pre-existing toponym of Celtic origin, possibly *berna 'cleft'. The bear was the heraldic animal of the seal and coat of arms of Bern from at least the 1220s. The earliest reference to the keeping of live bears in the Bärengraben dates to the 1440s.",
+      },
+      {
+        title: "Bärengraben",
+        body:
+          "The Bärengraben, or Bear Pit, is a tourist attraction in the Swiss capital city of Bern. It is a bear pit, or enclosure housing bears, situated at the eastern edge of the old city of Bern, next to the Nydeggbrücke and the River Aar. Although still in use, the Bärengraben has been supplemented since 2009 by the adjacent BärenPark, a larger and more natural enclosure alongside the River Aar. The Bärengraben and BärenPark are administered as a geographically discrete part of the city's Dählhölzli Zoo. The Bärengraben is a Swiss heritage site of national significance, and is of particular significance in Bern because the bear is a symbol of both the city and surrounding canton, and is featured in their coat of arms.",
+      },
     ],
   },
   {
