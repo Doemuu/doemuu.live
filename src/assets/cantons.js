@@ -55,7 +55,7 @@ const cantons = [
     textX: "181.84575",
     textY: "489.99585",
     circleTransform: "translate(-162.06585,326.94684)",
-    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    images: ["bern1.jpg", "bern2.jpg", "bern3.jpg"],
     descriptions: [
       {
         title: "Federal Palace of Switzerland",
