@@ -83,11 +83,23 @@ const cantons = [
     textX: "109.88175",
     textY: "350.55984",
     circleTransform: "translate(-188.52543,194.9781)",
-    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    images: ["delemont1.jpg", "delemont2.jpg", "delemont3.jpg"],
     descriptions: [
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
+      {
+        title: "Porte au Loup",
+        body:
+          "The medieval city center still has its original outline. Two of the city gates date from the 18th century: the Porte au Loup (1775) and the Porte de Porrentruy (1756–59). There are also still parts of the city wall, with the Tour des Archives, which was originally built in the 13th century. The city squares are marked by monumental fountains dating from the 16th century, in Renaissance style. The Catholic church of Saint-Marcel was built from 1762 to 1767 with a mixture of architectural styles from the baroque to the classical. Other important buildings from the time of the Bishops of Basel are the Hôtel de Ville (built from 1742 to 1745), the Châtellenie (now used as the Cantonal Parliament, remodeled in 1717), and the Episcopal Palace (1716–21). The late gothic chapel of Saint-Michel dates from the 17th century.",
+      },
+      {
+        title: "Delémont",
+        body:
+          "The area of the municipality was already settled in the middle Bronze Age. Fifteen urn burials have been discovered in the municipality. There were late Bronze Age settlements south and west of the modern city. Several Iron Age buildings have been discovered south of town. There is also evidence of a Roman settlement, including a Gallo-Roman mausoleum and a small cache of coins. One or possibly several villas in the area may indicate the existence of a vicus near the town. The first historic mention of the name dates from 736 to 37 as Delemonte. In 1131, the first mention of the German name Telsperg was recorded. It is also mentioned as Laimunt (1181) and Deleymunt (1225). The name is a combination of the Germanic Tello or Dagili with the Latin word mons for mountain.",
+      },
+      {
+        title: "Vorbourg",
+        body:
+          "Vorbourg Chapel and the castle ruins higher up are situated on an imposing promontory. From the 11th to the 15th centuries, a feudal castle inhabited by the Telsperg knights stood on a promontory overlooking the Birs gorge between Delémont and Soyhières. Today, only the ruins of the main tower in the upper part, which were recently restored and fortified, the square St-Anne tower and the Notre-Dame du Vorbourg Chapel remain.",
+      },
     ],
   },
   {
@@ -331,11 +343,23 @@ const cantons = [
     textX: "548.37677",
     textY: "333.05682",
     circleTransform: "translate(261.54575,169.70684)",
-    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    images: ["st-gallen1.jpg", "st-gallen2.jpg", "st-gallen3.jpg"],
     descriptions: [
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
+      {
+        title: "Monastery St Gallen",
+        body:
+          "The foundation stone for the abbey was laid in 612 by the Irish itinerant monk Gallus. A good 100 years later, Abbot Otmar revived the monastery and transformed it into an important centre for writing activities and book illumination. The spirit of the Benedictine monks can still be felt in the historically impressive walls today. The Abbey Library of St Gall, also known as the pharmacy of the soul, has what must be one of the most attractive rococo halls in Switzerland.",
+      },
+      {
+        title: "St Gallen",
+        body:
+          "The town of St. Gallen grew around the Abbey of St Gall, founded in the 8th century. The abbey is said to have been built at the site of the hermitage of Irish missionary Gallus, who according to legend had established himself by the river Steinach in AD 612. The monastery itself was founded by Saint Othmar in c. 720. The abbey prospered in the 9th century and became a site of pilgrimage and a center of trade, with associated guest houses, stables and other facilities, a hospital, one of the first monastery schools north of the Alps. By the tenth century, a settlement had grown up around the abbey. In 926 Magyar raiders attacked the abbey and surrounding town. Saint Wiborada, the first woman formally canonized by the Vatican, reportedly saw a vision of the impending attack and warned the monks and citizens to flee. While the monks and the abbey treasure escaped, Wiborada chose to stay behind and was killed by the raiders. Between 924 and 933 the Magyars again threatened the abbey, and its books were removed for safekeeping to Reichenau. Not all the books were returned.",
+      },
+      {
+        title: "Knie Kinderzoo",
+        body:
+          "Knies Kinderzoo is a zoological garden in Rapperswil in the Swiss canton of St. Gallen. The zoo belongs to the Swiss National Circus Knie and is part of its winter quarters. Some of the animals from the children's zoo accompany Circus Knie on its Swiss tour as a travelling zoo. Knie's children's zoo is open to visitors from March to October. In contrast to other zoos, direct contact between the visitors and the animals is an important concern and quite desirable. Various domestic animals can be stroked and fed with zoo food. Elephants, many hoofed animals, several species of monkeys, rodents, kangaroos and a whole range of birds can be seen, a total of around 400 animals from 44 species. In addition, the zoo offers a sea lion show as well as refreshment and play facilities. Knies Children's Zoo uses the proceeds to support a project to protect the highly endangered Asian elephants in Sri Lanka. Currently (2015), support for another project in Thailand is under consideration.",
+      },
     ],
   },
   {
