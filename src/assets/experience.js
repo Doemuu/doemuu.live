@@ -4,6 +4,13 @@ const experience = {
   title: "experience",
   details: [
     {
+      job: "Junior Softwaredeveloper",
+      description:
+        "Development of internal and external software at Network41 AG.",
+      location: "Sursee LU CH",
+      date: "November 2021",
+    },
+    {
       job: "Intern Junior Software Engineer (Fullstack)",
       description:
         "Final year, studying software engineering in practice at Enhanzz AG.",
