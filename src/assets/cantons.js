@@ -11,11 +11,15 @@ const cantons = [
     textX: 424.31271,
     textY: 358.20685,
     circleTransform: "translate(79.76675,194.84656)",
-    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    images: ["zurich1.jpg", "zurich2.jpg", "zurich3.jpg"],
     descriptions: [
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
+      { title: "Bahnhofstrasse", body: "Bahnhofstrasse is an approximately 1.4-kilometre-long street in Zurich. It is internationally known as one of the most expensive and exclusive shopping streets in the world. It is lined with numerous department stores, boutiques of major fashion designers, jewellery and watch shops as well as luxury hotels. The Paradeplatz, which Bahnhofstrasse crosses, is considered the centre of the Swiss banking centre. Bahnhofstrasse is largely a pedestrian zone closed to regular car traffic." },
+      {
+        title: "Zürich",
+        body:
+          "On 1 May 1351, the citizens of Zürich had to swear allegiance before representatives of the cantons of Lucerne, Schwyz, Uri and Unterwalden, the other members of the Swiss Confederacy. Thus, Zürich became the fifth member of the Confederacy, which was at that time a loose confederation of de facto independent states. Zürich was the presiding canton of the Diet from 1468 to 1519. This authority was the executive council and lawmaking body of the confederacy, from the Middle Ages until the establishment of the Swiss federal state in 1848. Zürich was temporarily expelled from the confederacy in 1440 due to a war with the other member states over the territory of Toggenburg (the Old Zürich War). Neither side had attained significant victory when peace was agreed upon in 1446, and Zürich was readmitted to the confederation in 1450.",
+      },
+      { title: "Landesmuseum", body: "Although for years after the founding of the federal state in 1848 it did not seem clear that Switzerland would build a national museum at all, in 1891 the canton of Zurich prevailed at federal level over the other applicant cities of Basel, Bern and Lucerne for the location of a new national museum. Accordingly, the National Museum was opened in 1898 in a newly constructed castle-like building by Gustav Gull northwest of the main hall of the main railway station near today's Platzspitzpark in Zurich. Eugène Ruffy presided over the festivities for the inauguration of the National Museum on 25 June 1898: the cantons were represented in 20 pictures, comparable to the guilds of today's Sechseläuten. Each canton carried an 'allegorical carriage', which represented a special feature of the canton. The procession was led by a 'splendid carriage of Helvetia', the finale was a carriage with 'Turica, the protector of art'. Zurich had won a competition against other Swiss cities with its 'Fairytale Castle' project. The building combines a wide variety of architectural styles and has therefore been controversial ever since it was built." },
     ],
   },
   {
@@ -537,7 +541,11 @@ const cantons = [
     circleTransform: "translate(186.06075,575.67784)",
     images: ["bellinzona1.JPG", "bellinzona2.jpg", "bellinzona3.JPG"],
     descriptions: [
-      { title: "Castel Grande", body: "The site of Castelgrande has been fortified since at least the late 1st century BC and until the 13th century it was the only fortification in Bellinzona. During its history the castle has been known as the stronghold (before the 13th century), the Old Castle in the 14–15th centuries, Un Castle after 1506 and Saint Michael's Castle from 1818. The Castelgrande hill includes a nearly vertical side on the north and a steep southern side, but is nearly flat and 150–200 meters (490–660 ft) in diameter. The natural shape of the hill has encouraged every man-made fortification to follow the same contours. While the Roman fort is not visible the Roman foundations were used by the High Middle Ages castle which followed. Of the High Middle Ages castle the only visible parts are a few pieces of wall that are still standing. Much of the visible castle dates from 1250–1500 with extensive renovations and some expansion in the last two centuries. Most of the area inside the castle walls is now flat, open space." },
+      {
+        title: "Castel Grande",
+        body:
+          "The site of Castelgrande has been fortified since at least the late 1st century BC and until the 13th century it was the only fortification in Bellinzona. During its history the castle has been known as the stronghold (before the 13th century), the Old Castle in the 14–15th centuries, Un Castle after 1506 and Saint Michael's Castle from 1818. The Castelgrande hill includes a nearly vertical side on the north and a steep southern side, but is nearly flat and 150–200 meters (490–660 ft) in diameter. The natural shape of the hill has encouraged every man-made fortification to follow the same contours. While the Roman fort is not visible the Roman foundations were used by the High Middle Ages castle which followed. Of the High Middle Ages castle the only visible parts are a few pieces of wall that are still standing. Much of the visible castle dates from 1250–1500 with extensive renovations and some expansion in the last two centuries. Most of the area inside the castle walls is now flat, open space.",
+      },
       {
         title: "Bellinzona",
         body:
