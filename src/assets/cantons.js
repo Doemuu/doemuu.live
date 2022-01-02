@@ -211,11 +211,23 @@ const cantons = [
     textX: "85.421761",
     textY: "550.43481",
     circleTransform: "translate(-232.61205,380.49384)",
-    images: ["uc.jpg", "uc.jpg", "uc.jpg"],
+    images: ["fribourg1.jpg", "fribourg2.jpg", "fribourg3.jpg"],
     descriptions: [
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
-      { title: "UNDER CONSTRUCTION", body: "" },
+      {
+        title: "Bern Bridge",
+        body:
+          "The first bridge of the city. The Bern Bridge was originally supported by wooden trestles. Its current shape dates back to 1653. Its central pier made of molasse and the roadway were renewed in 1853-54, its roof dates from 1855. The three bridges in the lower town (Bernbrücke, Mittlere Brücke, St-Joahnnbrücke) were all built in the mid-13th century, about a hundred years after the town was founded by Berthold IV of Zähringen in 1157. Before the Bernbrücke was built, the Saane was crossed by a ford with a ferry boat. The water reached below the rock face on which the former Augustinian monastery, a large white building, towers. Today there is a car park here. In 1340, the bridge was sawn apart during an attack by the Bernese to cut off the enemy's way. The Bern Bridge is the last covered wooden bridge in the city.",
+      },
+      {
+        title: "Fribourg",
+        body:
+          "The town was founded in 1157 by Berthold IV, Duke of Zähringen. Its name is derived from German frei (free) and Burg (fort). Its most ancient part is conveniently located on a former peninsula of the river Sarine, protected on three sides by steep cliffs. The easily defended city helped the Dukes of Zähringen to strengthen and extend their power in the Swiss plateau in the area between the Aare and La Sarine. Beginning at the time of its inception, Fribourg built a city-state; initially, the land it controlled lay some distance away. When the dukes of Zähringen died out in 1218, the city was transferred to the related Kyburg family. They granted the city its former privileges and wrote the municipal laws in the so-called Handfeste in 1249, in which the legal, institutional and economic organizations were established. Several treaties with neighbouring city-states, including Avenches (1239), Bern (1243), and Morat (Murten) (1245), were signed at this time. The city was sold to the Habsburgs in 1277. Trade and industry began as early as the mid-13th century. In the early period, Fribourg consisted of four distinct inner city districts: Burg, Au, La Neuveville, and Spital. The city developed rapidly, which led to its first expansion: the Burg district expanded to the west in 1224, a town was established across the river in 1254, and in 1280 development began near Place Python. These expansions reflect the economic boom in Fribourg. The 14th century was dominated by trade, and cloth and leather production, which brought the city renown in Central Europe by 1370. In 1339, Fribourg participated alongside the Habsburgs and the County of Burgundy in the Battle of Laupen against Bern and its Swiss Confederacy allies",
+      },
+      {
+        title: "Cathedral St. Nicholas",
+        body:
+          "The main body of the church was started in 1283 and completed by 1430. The tower was completed in 1490. It is 76 metres tall and houses 11 bells. It also features a rose window above the main portal with stained glass by Harrison Weltlich (1988). The stained-glass windows, designed by the Polish painter Jozef Mehoffer and made by local craftsmen Kirsch & Fleckner between 1896 and 1936, constitute one of the most important collections of religious Art Nouveau stained-glass windows.",
+      },
     ],
   },
   {
